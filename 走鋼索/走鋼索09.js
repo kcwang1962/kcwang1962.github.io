@@ -429,18 +429,18 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
-	// 圖層_4
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#FFFFFF").ss(2,1,1).p("Eg/PAAAMB+fAAA");
-	this.shape.setTransform(404.2,102.1);
-
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(600));
-
-	// 圖層_3
+	// 人
 	this.instance = new lib.man();
 	this.instance.setTransform(320.8,67.5,0.5822,0.5822,0,0,0,-184.6,-47.6);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(600));
+
+	// 鋼索
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("#FFFFFF").ss(2,1,1).p("Eg/PAAAMB+fAAA");
+	this.shape.setTransform(404.2,102.4);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(600));
 
 	// 圖層_2
 	this.instance_1 = new lib.補間動畫1("synched",0);
@@ -465,9 +465,9 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/CachedBmp_9.png?1606576952409", id:"CachedBmp_9"},
-		{src:"images/CachedBmp_8.png?1606576952409", id:"CachedBmp_8"},
-		{src:"images/走鋼索09_atlas_1.png?1606576952222", id:"走鋼索09_atlas_1"}
+		{src:"images/CachedBmp_9.png?1606577289874", id:"CachedBmp_9"},
+		{src:"images/CachedBmp_8.png?1606577289874", id:"CachedBmp_8"},
+		{src:"images/走鋼索09_atlas_1.png?1606577289687", id:"走鋼索09_atlas_1"}
 	],
 	preloads: []
 };
