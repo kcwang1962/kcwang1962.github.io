@@ -27,33 +27,33 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedBmp_5 = function() {
-	this.initialize(img.CachedBmp_5);
+(lib.CachedBmp_10 = function() {
+	this.initialize(img.CachedBmp_10);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,3050,358);
 
 
-(lib.CachedBmp_4 = function() {
-	this.initialize(img.CachedBmp_4);
+(lib.CachedBmp_9 = function() {
+	this.initialize(img.CachedBmp_9);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,3050,358);
 
 
-(lib.CachedBmp_3 = function() {
+(lib.CachedBmp_8 = function() {
 	this.initialize(ss["走鋼索10_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_2 = function() {
+(lib.CachedBmp_7 = function() {
 	this.initialize(ss["走鋼索10_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_1 = function() {
+(lib.CachedBmp_6 = function() {
 	this.initialize(ss["走鋼索10_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
@@ -88,7 +88,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// 圖層_1
-	this.instance = new lib.CachedBmp_5();
+	this.instance = new lib.CachedBmp_10();
 	this.instance.setTransform(-762.4,-89.45,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
@@ -111,7 +111,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// 圖層_1
-	this.instance = new lib.CachedBmp_4();
+	this.instance = new lib.CachedBmp_9();
 	this.instance.setTransform(-762.4,-89.45,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
@@ -157,7 +157,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// 圖層_1
-	this.instance = new lib.CachedBmp_3();
+	this.instance = new lib.CachedBmp_8();
 	this.instance.setTransform(0,0,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
@@ -248,7 +248,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// 圖層_1
-	this.instance = new lib.CachedBmp_2();
+	this.instance = new lib.CachedBmp_7();
 	this.instance.setTransform(0,0,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
@@ -343,7 +343,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// 圖層_1
-	this.instance = new lib.CachedBmp_1();
+	this.instance = new lib.CachedBmp_6();
 	this.instance.setTransform(0,0,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
@@ -431,7 +431,7 @@ if (reversed == null) { reversed = false; }
 
 	// 人
 	this.instance = new lib.man();
-	this.instance.setTransform(140.8,67.5,0.5822,0.5822,0,0,0,-184.6,-47.6);
+	this.instance.setTransform(140.8,68,0.5822,0.5822,0,0,0,-184.6,-47.6);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(600));
 
@@ -442,20 +442,20 @@ if (reversed == null) { reversed = false; }
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(600));
 
-	// 圖層_2
+	// 背景
 	this.instance_1 = new lib.補間動畫1("synched",0);
 	this.instance_1.setTransform(762.4,89.45);
 
 	this.instance_2 = new lib.補間動畫2("synched",0);
-	this.instance_2.setTransform(37.9,89.45);
+	this.instance_2.setTransform(-440.05,89.45);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1}]}).to({state:[{t:this.instance_2}]},599).wait(1));
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).to({_off:true,x:37.9},599).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).to({_off:true,x:-440.05},599).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(-574.5,89,2099.5,90);
+p.nominalBounds = new cjs.Rectangle(-1052.4,89,2577.4,90);
 // library properties:
 lib.properties = {
 	id: 'D5A3113A17C9D54B9F5E527044D5F88C',
@@ -465,9 +465,9 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/CachedBmp_5.png?1607556844632", id:"CachedBmp_5"},
-		{src:"images/CachedBmp_4.png?1607556844632", id:"CachedBmp_4"},
-		{src:"images/走鋼索10_atlas_1.png?1607556844521", id:"走鋼索10_atlas_1"}
+		{src:"images/CachedBmp_10.png?1607907456816", id:"CachedBmp_10"},
+		{src:"images/CachedBmp_9.png?1607907456816", id:"CachedBmp_9"},
+		{src:"images/走鋼索10_atlas_1.png?1607907456696", id:"走鋼索10_atlas_1"}
 	],
 	preloads: []
 };
