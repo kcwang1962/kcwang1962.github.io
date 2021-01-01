@@ -1,0 +1,283 @@
+﻿{"frames": {
+
+"Mesh":
+{
+	"frame": {"x":0,"y":0,"w":418,"h":409},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":418,"h":409},
+	"sourceSize": {"w":418,"h":409}
+},
+"Mesh_1":
+{
+	"frame": {"x":60,"y":478,"w":9,"h":13},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":9,"h":13},
+	"sourceSize": {"w":9,"h":13}
+},
+"Mesh_10":
+{
+	"frame": {"x":9,"y":486,"w":10,"h":6},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":10,"h":6},
+	"sourceSize": {"w":10,"h":6}
+},
+"Mesh_11":
+{
+	"frame": {"x":0,"y":486,"w":7,"h":20},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":7,"h":20},
+	"sourceSize": {"w":7,"h":20}
+},
+"Mesh_12":
+{
+	"frame": {"x":9,"y":496,"w":17,"h":8},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":17,"h":8},
+	"sourceSize": {"w":17,"h":8}
+},
+"Mesh_13":
+{
+	"frame": {"x":31,"y":473,"w":7,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":7,"h":22},
+	"sourceSize": {"w":7,"h":22}
+},
+"Mesh_14":
+{
+	"frame": {"x":24,"y":429,"w":16,"h":20},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":20},
+	"sourceSize": {"w":16,"h":20}
+},
+"Mesh_15":
+{
+	"frame": {"x":21,"y":473,"w":8,"h":21},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":8,"h":21},
+	"sourceSize": {"w":8,"h":21}
+},
+"Mesh_16":
+{
+	"frame": {"x":0,"y":474,"w":14,"h":10},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":14,"h":10},
+	"sourceSize": {"w":14,"h":10}
+},
+"Mesh_17":
+{
+	"frame": {"x":24,"y":451,"w":14,"h":20},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":14,"h":20},
+	"sourceSize": {"w":14,"h":20}
+},
+"Mesh_18":
+{
+	"frame": {"x":42,"y":443,"w":20,"h":14},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":20,"h":14},
+	"sourceSize": {"w":20,"h":14}
+},
+"Mesh_19":
+{
+	"frame": {"x":0,"y":458,"w":19,"h":14},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":19,"h":14},
+	"sourceSize": {"w":19,"h":14}
+},
+"Mesh_2":
+{
+	"frame": {"x":0,"y":439,"w":22,"h":17},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":17},
+	"sourceSize": {"w":22,"h":17}
+},
+"Mesh_20":
+{
+	"frame": {"x":64,"y":446,"w":8,"h":30},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":8,"h":30},
+	"sourceSize": {"w":8,"h":30}
+},
+"Mesh_21":
+{
+	"frame": {"x":40,"y":483,"w":12,"h":9},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":12,"h":9},
+	"sourceSize": {"w":12,"h":9}
+},
+"Mesh_22":
+{
+	"frame": {"x":74,"y":446,"w":14,"h":7},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":14,"h":7},
+	"sourceSize": {"w":14,"h":7}
+},
+"Mesh_23":
+{
+	"frame": {"x":71,"y":478,"w":7,"h":15},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":7,"h":15},
+	"sourceSize": {"w":7,"h":15}
+},
+"Mesh_24":
+{
+	"frame": {"x":55,"y":411,"w":17,"h":16},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":17,"h":16},
+	"sourceSize": {"w":17,"h":16}
+},
+"Mesh_25":
+{
+	"frame": {"x":83,"y":429,"w":8,"h":6},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":8,"h":6},
+	"sourceSize": {"w":8,"h":6}
+},
+"Mesh_26":
+{
+	"frame": {"x":0,"y":411,"w":16,"h":26},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":26},
+	"sourceSize": {"w":16,"h":26}
+},
+"Mesh_27":
+{
+	"frame": {"x":74,"y":455,"w":13,"h":7},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":13,"h":7},
+	"sourceSize": {"w":13,"h":7}
+},
+"Mesh_28":
+{
+	"frame": {"x":40,"y":494,"w":12,"h":8},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":12,"h":8},
+	"sourceSize": {"w":12,"h":8}
+},
+"Mesh_29":
+{
+	"frame": {"x":54,"y":493,"w":10,"h":10},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":10,"h":10},
+	"sourceSize": {"w":10,"h":10}
+},
+"Mesh_3":
+{
+	"frame": {"x":40,"y":459,"w":8,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":8,"h":22},
+	"sourceSize": {"w":8,"h":22}
+},
+"Mesh_30":
+{
+	"frame": {"x":42,"y":411,"w":11,"h":30},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":11,"h":30},
+	"sourceSize": {"w":11,"h":30}
+},
+"Mesh_31":
+{
+	"frame": {"x":64,"y":429,"w":17,"h":15},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":17,"h":15},
+	"sourceSize": {"w":17,"h":15}
+},
+"Mesh_32":
+{
+	"frame": {"x":55,"y":429,"w":7,"h":8},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":7,"h":8},
+	"sourceSize": {"w":7,"h":8}
+},
+"Mesh_4":
+{
+	"frame": {"x":18,"y":411,"w":22,"h":16},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":16},
+	"sourceSize": {"w":22,"h":16}
+},
+"Mesh_5":
+{
+	"frame": {"x":74,"y":411,"w":22,"h":8},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":8},
+	"sourceSize": {"w":22,"h":8}
+},
+"Mesh_6":
+{
+	"frame": {"x":50,"y":459,"w":8,"h":21},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":8,"h":21},
+	"sourceSize": {"w":8,"h":21}
+},
+"Mesh_7":
+{
+	"frame": {"x":74,"y":464,"w":5,"h":10},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":5,"h":10},
+	"sourceSize": {"w":5,"h":10}
+},
+"Mesh_8":
+{
+	"frame": {"x":74,"y":421,"w":11,"h":6},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":11,"h":6},
+	"sourceSize": {"w":11,"h":6}
+},
+"Mesh_9":
+{
+	"frame": {"x":28,"y":497,"w":8,"h":12},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":8,"h":12},
+	"sourceSize": {"w":8,"h":12}
+},
+"手握筆04psd":
+{
+	"frame": {"x":420,"y":0,"w":220,"h":527},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":220,"h":527},
+	"sourceSize": {"w":220,"h":527}
+}},
+"meta": {
+	"app": "Adobe Animate",
+	"version": "21.0.0.35450",
+	"image": "蘭花01_atlas_2.png",
+	"format": "undefined",
+	"size": {"w":1024,"h":1024},
+	"scale": "1"
+}
+}
