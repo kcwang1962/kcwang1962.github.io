@@ -27,70 +27,70 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedBmp_10 = function() {
+(lib.CachedBmp_11 = function() {
 	this.initialize(ss["手繪lady04_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_9 = function() {
+(lib.CachedBmp_10 = function() {
 	this.initialize(ss["手繪lady04_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_8 = function() {
+(lib.CachedBmp_9 = function() {
 	this.initialize(ss["手繪lady04_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_7 = function() {
+(lib.CachedBmp_8 = function() {
 	this.initialize(ss["手繪lady04_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_6 = function() {
+(lib.CachedBmp_7 = function() {
 	this.initialize(ss["手繪lady04_atlas_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_5 = function() {
+(lib.CachedBmp_6 = function() {
 	this.initialize(ss["手繪lady04_atlas_1"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_4 = function() {
+(lib.CachedBmp_5 = function() {
 	this.initialize(ss["手繪lady04_atlas_1"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_3 = function() {
+(lib.CachedBmp_4 = function() {
 	this.initialize(ss["手繪lady04_atlas_1"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_12 = function() {
+(lib.CachedBmp_3 = function() {
 	this.initialize(ss["手繪lady04_atlas_1"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_11 = function() {
+(lib.CachedBmp_2 = function() {
 	this.initialize(ss["手繪lady04_atlas_1"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
@@ -196,10 +196,10 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// lady原稿01_ai
-	this.instance = new lib.CachedBmp_11();
+	this.instance = new lib.CachedBmp_2();
 	this.instance.setTransform(69.35,77.3,0.5,0.5);
 
-	this.instance_1 = new lib.CachedBmp_12();
+	this.instance_1 = new lib.CachedBmp_3();
 	this.instance_1.setTransform(69.35,77.3,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance}]},113).to({state:[{t:this.instance_1}]},56).wait(1));
@@ -225,7 +225,7 @@ if (reversed == null) { reversed = false; }
 	this.instance.setTransform(302.3,281.05,0.5,0.5);
 	this.instance._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(146).to({_off:false},0).to({_off:true},4).wait(20));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(146).to({_off:false},0).wait(24));
 
 	this._renderFirstFrame();
 
@@ -292,7 +292,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// lady08
-	this.instance = new lib.CachedBmp_3();
+	this.instance = new lib.CachedBmp_4();
 	this.instance.setTransform(153.35,351.75,0.5,0.5);
 	this.instance._off = true;
 
@@ -315,7 +315,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// lady07
-	this.instance = new lib.CachedBmp_4();
+	this.instance = new lib.CachedBmp_5();
 	this.instance.setTransform(270.45,282.15,0.5,0.5);
 	this.instance._off = true;
 
@@ -338,7 +338,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// lady06
-	this.instance = new lib.CachedBmp_5();
+	this.instance = new lib.CachedBmp_6();
 	this.instance.setTransform(179.55,246.75,0.5,0.5);
 	this.instance._off = true;
 
@@ -361,7 +361,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// lady05
-	this.instance = new lib.CachedBmp_6();
+	this.instance = new lib.CachedBmp_7();
 	this.instance.setTransform(96.75,268.65,0.5,0.5);
 	this.instance._off = true;
 
@@ -384,7 +384,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// lady04
-	this.instance = new lib.CachedBmp_7();
+	this.instance = new lib.CachedBmp_8();
 	this.instance.setTransform(99.25,158.25,0.5,0.5);
 	this.instance._off = true;
 
@@ -407,7 +407,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// lady03
-	this.instance = new lib.CachedBmp_8();
+	this.instance = new lib.CachedBmp_9();
 	this.instance.setTransform(128,146.85,0.5,0.5);
 	this.instance._off = true;
 
@@ -430,7 +430,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// lady02
-	this.instance = new lib.CachedBmp_9();
+	this.instance = new lib.CachedBmp_10();
 	this.instance.setTransform(195.3,77.3,0.5,0.5);
 	this.instance._off = true;
 
@@ -453,7 +453,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// lady01
-	this.instance = new lib.CachedBmp_10();
+	this.instance = new lib.CachedBmp_11();
 	this.instance.setTransform(69.35,88.6,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).to({_off:true},113).wait(57));
@@ -1852,7 +1852,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/手繪lady04_atlas_1.png?1611027452309", id:"手繪lady04_atlas_1"}
+		{src:"images/手繪lady04_atlas_1.png?1611659529783", id:"手繪lady04_atlas_1"}
 	],
 	preloads: []
 };
