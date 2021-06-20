@@ -1,19 +1,19 @@
 <HTML>
 <HEAD>
-<meta HTTP-EQUIV="Content-Type" content="text/html; charset=big5">
+<meta HTTP-EQUIV="Content-Type" content="text/html; charset=utf-8">
 <meta HTTP-EQUIV="Expires" CONTENT="Tue, 01 Jan 1980 1:00:00 GMT">
 <meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
-<title>�Z�űƽ�</title>
+<title>班級排課</title>
 <style>
 <!--
-body	{font-family: �s�ө���, Arial; font-size: 12pt; color: #000000}
-form	{font-family: �s�ө���, Arial; font-size: 12pt;}
-input	{font-family: �s�ө���, Arial; font-size: 12pt; color: #000000}
-select	{font-family: �s�ө���, Arial; font-size: 12pt; color: #000000}
-h1	{font-family: �s�ө���, Arial; font-size: 16pt; font-weight: bold}
-th	{font-family: �s�ө���, Arial; font-size: 12pt; font-weight: bold; background-color: #F0E68C}
-td	{font-family: �s�ө���, Arial; font-size: 12pt;}
-textarea	{font-family: �s�ө���, arial; font-size: 12pt; color: #000000}
+body	{font-family: 新細明體, Arial; font-size: 12pt; color: #000000}
+form	{font-family: 新細明體, Arial; font-size: 12pt;}
+input	{font-family: 新細明體, Arial; font-size: 12pt; color: #000000}
+select	{font-family: 新細明體, Arial; font-size: 12pt; color: #000000}
+h1	{font-family: 新細明體, Arial; font-size: 16pt; font-weight: bold}
+th	{font-family: 新細明體, Arial; font-size: 12pt; font-weight: bold; background-color: #F0E68C}
+td	{font-family: 新細明體, Arial; font-size: 12pt;}
+textarea	{font-family: 新細明體, arial; font-size: 12pt; color: #000000}
 pre, tt	{font-size: 12pt}
 a:active	{color:#FF0000; text-decoration: none}
 a:link		{color:#0000FF; text-decoration: none}
@@ -29,12 +29,12 @@ a:hover	{color:#FF0000; text-decoration: none}
 <table border="0" width="98%" cellspacing=0>
 <tr bgcolor="Khaki">
 	<td align="center" width="50%"><font size="+1">
-		<b>�H�Z�űƽ�(�Ƹg�t��)</b></font></td>
-	<td>�i�Z�šj&nbsp;&nbsp;
+		<b>以班級排課(事經系所)</b></font></td>
+	<td>【班級】&nbsp;&nbsp;
 		<select name="SelClassNo" onchange="submit()">
 <option value="UB1A">UB1A</option><option value="UB1B">UB1B</option><option value="UB2A">UB2A</option><option value="UB2B">UB2B</option><option value="UB3A">UB3A</option><option value="UB3B">UB3B</option><option value="UB4A">UB4A</option><option value="UB4B">UB4B</option><option value="UB5A">UB5A</option><option value="UB5B">UB5B</option><option value="UB6A">UB6A</option><option value="UB6B">UB6B</option><option value="UB7A">UB7A</option><option value="UB7B">UB7B</option><option value="GB1.">GB1</option><option value="GB2." selected>GB2</option><option value="GB3.">GB3</option><option value="GB4.">GB4</option><option value="GB5.">GB5</option><option value="EB1.">EB1</option><option value="EB2.">EB2</option><option value="EB3.">EB3</option><option value="EB4.">EB4</option><option value="EB5.">EB5</option><option value="EB6.">EB6</option><option value="EB7.">EB7</option><option values="UGRR">UGRR</option>
 		</select>
-		&nbsp;&nbsp;&nbsp;<a href="Class.asp">�Z�ť\�Ҫ�</a>
+		&nbsp;&nbsp;&nbsp;<a href="Class.asp">班級功課表</a>
 	</td> </tr>
 </table> 
 </form>
@@ -42,21 +42,21 @@ a:hover	{color:#FF0000; text-decoration: none}
 <table width="98%" border=1 cellspacing=0 cellpadding=2
 bordercolor="#6666AA">
 <tr>
-	<th width="7%">�ҵ{�N�X</th>
-	<th width="17%">�ҵ{�W��(�I��W�ٶi�J�ƽ�)</th>
-	<th width="15%">�Юv</th>
-	<th width="4%">�Ǥ�</th>
-	<th width="5%">���Ƹ`��</th>
-	<th width="5%">�w�Ƹ`��</th>
-	<th width="5%">�H�ƤW��</th>
-	<th width="5%">�^�y�½�</th>
-	<th width="5%">�~�v��P</th>
-	<th width="4%">��ȫ�</th>
-	<th width="4%">�ǵ{��</th>
-	<th width="4%">�`�㫬</th>
-	<th width="20%">��������</th>    
+	<th width="7%">課程代碼</th>
+	<th width="17%">課程名稱(點選名稱進入排課)</th>
+	<th width="15%">教師</th>
+	<th width="4%">學分</th>
+	<th width="5%">應排節數</th>
+	<th width="5%">已排節數</th>
+	<th width="5%">人數上限</th>
+	<th width="5%">英語授課</th>
+	<th width="5%">業師協同</th>
+	<th width="4%">實務型</th>
+	<th width="4%">學程型</th>
+	<th width="4%">總整型</th>
+	<th width="20%">附註說明</th>    
 </tr>
-<tr><td align=center>B6000B</td><td align=center><a href="SelectedSbj.asp?SbjNo=B6000B">�H�O�귽�޲z��s</a></td><td align=center>�]�ѮS</td><td align=center>3</td><td align=center>3</td><td align=center>3</td><td align=center>55</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>&nbsp;</td></tr><tr><td align=center>B6700A</td><td align=center><a href="SelectedSbj.asp?SbjNo=B6700A">�����޲z</a></td><td align=center>�L�n��</td><td align=center>3</td><td align=center>3</td><td align=center>3</td><td align=center>55</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>&nbsp;</td></tr><tr><td align=center>B6813</td><td align=center><a href="SelectedSbj.asp?SbjNo=B6813">�פ�g�@(�T)</a></td><td align=center>�B�E��</td><td align=center>1</td><td align=center>2</td><td align=center>2</td><td align=center>55</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>&nbsp;</td></tr><tr><td align=center>B6901</td><td align=center><a href="SelectedSbj.asp?SbjNo=B6901">�g��M�D(�@)</a></td><td align=center>�L�w��; ����â; �d�Ҹh; ���˶�; ���O��; ���εX; 05B05; ����Q; �L�n��; ������; �����Y; �]�ѮS</td><td align=center>1</td><td align=center>2</td><td align=center>2</td><td align=center>55</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>&nbsp;</td></tr><tr><td align=center>B8070</td><td align=center><a href="SelectedSbj.asp?SbjNo=B8070">�M�׺޲z���</a></td><td align=center>���˶�</td><td align=center>2</td><td align=center>2</td><td align=center>2</td><td align=center>55</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>�O</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>���~�@�e�ҵ{</td></tr><tr><td align=center>G6011J</td><td align=center><a href="SelectedSbj.asp?SbjNo=G6011J">�פ�(�@)</a></td><td align=center>����â</td><td align=center>2</td><td align=center>2</td><td align=center>2</td><td align=center>55</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>�g��ǰ|</td></tr></table>
+<tr><td align=center>B6000B</td><td align=center><a href="SelectedSbj.asp?SbjNo=B6000B">人力資源管理研究</a></td><td align=center>孫碧娟</td><td align=center>3</td><td align=center>3</td><td align=center>3</td><td align=center>55</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>&nbsp;</td></tr><tr><td align=center>B6700A</td><td align=center><a href="SelectedSbj.asp?SbjNo=B6700A">策略管理</a></td><td align=center>林南宏</td><td align=center>3</td><td align=center>3</td><td align=center>3</td><td align=center>55</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>&nbsp;</td></tr><tr><td align=center>B6813</td><td align=center><a href="SelectedSbj.asp?SbjNo=B6813">論文寫作(三)</a></td><td align=center>丁鴻儒</td><td align=center>1</td><td align=center>2</td><td align=center>2</td><td align=center>55</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>&nbsp;</td></tr><tr><td align=center>B6901</td><td align=center><a href="SelectedSbj.asp?SbjNo=B6901">經營專題(一)</a></td><td align=center>林德怡; 陳瑞璽; 吳啟絹; 黃憲隆; 成力庚; 王佳琪; 05B05; 梁詠貴; 林南宏; 陳美芳; 項維欣; 孫碧娟</td><td align=center>1</td><td align=center>2</td><td align=center>2</td><td align=center>55</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>&nbsp;</td></tr><tr><td align=center>B8070</td><td align=center><a href="SelectedSbj.asp?SbjNo=B8070">專案管理實務</a></td><td align=center>黃憲隆</td><td align=center>2</td><td align=center>2</td><td align=center>2</td><td align=center>55</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>是</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>五年一貫課程</td></tr><tr><td align=center>G6011J</td><td align=center><a href="SelectedSbj.asp?SbjNo=G6011J">論文(一)</a></td><td align=center>陳瑞璽</td><td align=center>2</td><td align=center>2</td><td align=center>2</td><td align=center>55</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>經營學院</td></tr></table>
 <br />
 </center>
 </body>
