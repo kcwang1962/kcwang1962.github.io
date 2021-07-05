@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>input range</title>
+  <script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+<h1>Display a Range Field</h1>
+<div id="app">
+  <form>
+    <input v-model= "message" type="range" id="vol" name="vol" min="0" max="100">
+  </form>
+  <label for="vol">Volume (between 0 and 100): <span style="color:red;font-size:30px;font-weight: bolder;">{{message}}</span></label>
+</div>
+<script>
+  // Vue 3.0 with options-base style
+  const vm = Vue.createApp({
+    data() {
+      return {
+        message: 0
+      }
+    }
+  });
+  // mount
+  vm.mount('#app');
+</script>
+
+</body>
+</html>
