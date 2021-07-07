@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v-for用於table</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <script src="https://unpkg.com/vue@next"></script>
+    <style>
+        div {
+            font-size: 15px;
+            color: blue;
+            margin: 5px;
+        }
+        #app01{
+            font-size: 20px;
+            color: red;
+            font-weight: bold;
+            margin: 5px;
+        }
+        img {
+            width: 70%;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="app01" style="color:red;">
+    {{ message01 }}
+</div>
+
+
+<table border="1" width="70%" cellspacing="0" cellpadding="0" >
+    <tr id="app02">
+        <th style="color:blue; font-size:20px;">品種</th>
+        <th v-for="item in arr01">
+            <div>
+                <img v-bind:src=item >
+            </div>
+        </th>
+    </tr>
+
+    <tr id="app03" >
+        <td v-for="item in arr02">
+            <div>{{item}}</div>
+        </td>
+    </tr>
+    <tr id="app04">
+        <td v-for="item in arr03">
+            <div>{{item}}</div>
+        </td>
+    </tr>
+    <tr id="app05">
+        <td v-for="item in arr04">
+            <div>{{item}}</div>
+        </td>
+    </tr>
+</table>
+
+<script>
+    // Vue 3.0 with options-base style
+    const vm01 = Vue.createApp({
+        data() {
+            return {
+                message01: '【夏日芒果大賞】一次搞懂所有芒果品種'
+            }
+        }
+    });
+    const vm02 = Vue.createApp({
+        data() {
+            return {
+                arr01:[
+                    "table_pic/pic01.jpg",
+                    "table_pic/pic02.jpg",
+                    "table_pic/pic03.jpg",
+                    "table_pic/pic04.jpg",
+                    "table_pic/pic05.jpg",
+                    "table_pic/pic06.jpg",
+                    "table_pic/pic07.jpg"
+                ]
+            }
+        }
+    });
+
+    const vm03 = Vue.createApp({
+        data() {
+            return {
+                arr02: ['口感', '細緻肉厚', '細緻多汁', 'Q彈紮實', '綿密細緻',
+                    '細緻肉厚', 'Q彈', 'Q彈']
+            }
+        }
+    });
+
+    const vm04 = Vue.createApp({
+        data() {
+            return {
+                arr03: ['甜度', '高', '清爽甜', '高', '超高',
+                    '高', '甜中帶酸', '甜中微酸']
+            }
+        }
+    });
+    const vm05 = Vue.createApp({
+        data() {
+            return {
+                arr04: ['特色', '濃郁香氣', '水蜜桃香', '龍眼口味', '迷人果香',
+                    '濃郁芒果香', '淡雅香氣', '清爽香氣']
+            }
+        }
+    });
+
+    // mount
+    vm01.mount('#app01');
+    vm02.mount('#app02');
+    vm03.mount('#app03');
+    vm04.mount('#app04');
+    vm05.mount('#app05');
+</script>
+</body>
+</html>
