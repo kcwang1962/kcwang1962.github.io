@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Vue App</title>
+  <script src="https://unpkg.com/vue@next"></script>
+  <style>
+    span {
+      color: red;
+      font-weight: bolder;
+      font-size: 30px;
+    }
+  </style>
+</head>
+
+<body>
+<div id="app">
+  <p2>計數: <span>{{count}}</span></p2><br><br>
+  <button v-on:click="count = count + 2">計數器</button>
+</div>
+<script>
+  const App = {
+    data() {
+      return {
+        count: 0
+      };
+    }
+  };
+
+  Vue.createApp(App).mount("#app");
+</script>
+</body>
+
+</html>
+</html>
