@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>v-for用於table</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <script src="https://unpkg.com/vue@next"></script>
+  <style>
+    div {
+      font-size: 15px;
+      color: blue;
+      margin: 5px;
+    }
+
+    #app01 {
+      font-size: 20px;
+      color: red;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    img {
+      width: 70%;
+    }
+
+    label {
+      margin-right: 0.5rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="app">
+    <h2 style="color:red;">{{ message01 }}</h2>
+
+    <form style="margin: 1rem 0">
+      <label>
+        <input type="checkbox" value="口感" v-model="checkName" value="口感">口感
+      </label>
+      <label>
+        <input type="checkbox" value="甜度" v-model="checkName" value="甜度">甜度
+      </label>
+      <label>
+        <input type="checkbox" value="特色" v-model="checkName" value="特色">特色
+      </label>
+    </form>
+
+    <p>您所選得是:{{ checkName.join(',') }}</p>
+
+    <table border="1" width="70%" cellspacing="0" cellpadding="0">
+      <tr>
+        <th>品種</th>
+        <th v-for="m in mangos">
+          <div><img v-bind:src="m.cover" alt=""></div>
+        </th>
+      </tr>
+      <tr v-show="checkName.includes('口感')">
+        <th>口感</th>
+        <td v-for="m in mangos">
+          <div>{{ m.taste }}</div>
+        </td>
+      </tr>
+      <tr v-show="checkName.includes('甜度')">
+        <th>甜度</th>
+        <td v-for="m in mangos">
+          <div>{{ m.sweetness }}</div>
+        </td>
+      </tr>
+      <tr v-show="checkName.includes('特色')">
+        <th>特色</th>
+        <td v-for="m in mangos">
+          <div>{{ m.feature }}</div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <script>
+    const vm = Vue.createApp({
+      data() {
+        return {
+          mangos: [
+            {
+              cover: "table_pic/pic01.jpg",
+              taste: "細緻肉厚",
+              sweetness: "高",
+              feature: "濃郁香氣",
+            },
+            {
+              cover: "table_pic/pic02.jpg",
+              taste: "細緻多汁",
+              sweetness: "清爽甜",
+              feature: "水蜜桃香",
+            },
+            {
+              cover: "table_pic/pic03.jpg",
+              taste: "Q彈紮實",
+              sweetness: "高",
+              feature: "龍眼口味",
+            },
+            {
+              cover: "table_pic/pic04.jpg",
+              taste: "綿密細緻",
+              sweetness: "超高",
+              feature: "迷人果香",
+            },
+            {
+              cover: "table_pic/pic05.jpg",
+              taste: "細緻肉厚",
+              sweetness: "高",
+              feature: "濃郁芒果香",
+            },
+            {
+              cover: "table_pic/pic06.jpg",
+              taste: "Q彈",
+              sweetness: "高",
+              feature: "淡雅香氣",
+            },
+            {
+              cover: "table_pic/pic07.jpg",
+              taste: "Q彈",
+              sweetness: "高",
+              feature: "清爽香氣",
+            },
+          ],
+          message01: "【夏日芒果大賞】一次搞懂所有芒果品種",
+          checkName: [],
+        };
+      },
+    });
+
+    // mount
+    vm.mount('#app');
+  </script>
+</body>
+
+</html>
