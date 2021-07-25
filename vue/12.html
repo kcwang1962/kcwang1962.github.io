@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>圖片選擇器</title>
+  <script src="https://unpkg.com/vue@next"></script>
+  <style>
+    img {  width: 225px;  height: 300px; }
+    button {
+      color: blue;
+      font-weight: bold;
+      border-color: brown;
+      border-radius: 95%;
+      background-color: bisque;
+    }
+    #modal {  position: absolute;
+      top: 20px;
+      left: 20px;
+      border: 1px solid gray;
+      background-color: white; }
+  </style>
+</head>
+<body>
+<div id="app">
+  <pic_browser></pic_browser>
+</div>
+<script>
+  const app = Vue.createApp({})
+  const images = [
+    "plant_pic/pic01.jpg",
+    "plant_pic/pic02.jpg",
+    "plant_pic/pic03.jpg",
+    "plant_pic/pic04.jpg",
+    "plant_pic/pic05.jpg",
+    "plant_pic/pic06.jpg",
+    "plant_pic/pic07.jpg",
+  ]
+
+  app.component('pic_browser', {
+    template:
+            '<div><button @click.stop="displayModal = true">打開相簿</button>' +
+            '<div id="modal" v-if="displayModal">' +
+            '<button @click="displayModal = false">x</button>' +
+            '<div><button @click="prev">&lt;</button>' +
+            '<img :src="image" />' +
+            '<button @click="next">&gt;</button></div></div></div>',
+
+    data() {  return { index: 0, image: images[0], displayModal: false };  },
+
+    methods: { next() { this.index = (this.index + 1) % images.length;
+        this.image = images[this.index]; },
+      prev() { this.index = (this.index + images.length - 1) % images.length;
+        this.image = images[this.index]; },
+      onClickOutsode(e) { if (e.target.localName !== "button") {  this.displayModal = false;  }  },  },
+    mounted() {  window.addEventListener("click", this.onClickOutsode); },
+  })
+  app.mount('#app')
+</script>
+</body>
+</html>
