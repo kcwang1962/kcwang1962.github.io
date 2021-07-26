@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>名言篩選器</title>
+  <script src="https://unpkg.com/vue@next"></script>
+  <style>
+    #blue {
+      color:blue;
+      font-weight: bold;
+    }
+    #brown {
+      color:brown;
+      font-weight: bold;
+    }
+    #red {
+      color:red;
+      font-weight: bold;
+    }
+    #black {
+      color:black;
+      font-weight: bold;
+    }
+    input {
+      color:red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+<div id="app">
+  <pic_browser></pic_browser>
+</div>
+<script>
+  const app = Vue.createApp({})
+  const quotes = [
+    { chinese: "在生命中最美麗的補償是：在真心幫助別人之際也幫助了自己。",
+      english: "It is one of the beautiful compensations in this life that no one can sincerely try to help another without helping himself.",
+      japanese: "人生の素晴らしい報酬の一つは、誰も真心をこめて他人を助けようとすれば、自分をも助けられることである。",
+      author: "─愛默生",
+    },
+    { chinese: "一旦當你做了一個決定，宇宙就會與你呼應去讓它發生。",
+      english: "Once you make a decision, the universe conspires to make it happen.",
+      japanese: "物事を決めると、宇宙はあなたと心を合わせて、それを具現化するようにする。",
+      author: "─愛默生",
+    },
+    { chinese: "失敗未必是一個錯誤，它可能只是在那種情況下最好的結果。真正的錯誤是當你停止去嘗試錯誤。",
+      english: "A failure is not always a mistake, it may simply be the best one can do under the circumstances. The real mistake is to stop trying.",
+      japanese: "失敗は必ずしも誤り（間違い）だとは限らない。それはその状況では、単に自分の力が及ぶ最善のことであるだけかもしれない。本当の誤りは試みをやめることである。",
+      author: "B. F. Skinner",
+    },
+    { chinese: "心念決定了我們的性格，我們想什麼就會變成什麼。當心純淨的時候，喜悅就會如影隨形而須臾不離了。",
+      english: "We are shaped by our thoughts; we become what we think. When the mind is pure, joy follows like a shadow that never leaves.",
+      japanese: "我々は、自分の思考によって形作られる。つまり、自分が思ったような人間になるのである。もし心が純真無垢であれば、決して離れない影のように喜びがついてくる。",
+      author: "Buddha",
+    },
+    { chinese: "恐懼之所以揮之不去，是因為看不出自己原是夢境的作者，而不是夢裡的角色。",
+      english: "The fear was held in place because he did not see that he was author of the dream, and not a figure in the dream.",
+      japanese: "夢の中で、恐れを拭いきれないのは、自分が夢の原作者だというのがわからず、夢の劇を演じる役割があると認めないからだ。",
+      author: "奇蹟課程",
+    },
+    { chinese: "不要設法去改變世界，而應決心改變你對世界的看法。你所看到的反應了你的想法。而你的想法只反應了你所選擇想要看到的事物。",
+      english: "Seek not to change the world, but choose to change your mind about the world. What you see reflects your thinking. And your thinking but reflects your choice of what you want to see.",
+      japanese: "世界を変えようとするのではなく、世界に対するあなたの考え方を変えることを選びなさい。あなたの考えは、見たいものの選択を反映しているだけである。",
+      author: "奇蹟課程",
+    },
+    { chinese: "當失去了財富時，毫無損失；當失去健康時，得不償失；當失去人格時，一無所有。",
+      english: "When wealth is lost, nothing is lost; when health is lost, something is lost; when character is lost, all is lost.",
+      japanese: "富を失っても、何も失わない。健康を損ねると、何かを失う。人格がなくなれば、全てを失う。",
+      author: "Billy Graham",
+    },
+  ]
+
+  app.component('pic_browser', {
+    template:
+            '<div><input v-model="keyword" placeholder="請填入名言關鍵字" /><br><br>' +
+            '<div v-for="(q, index) of filterQuotes" :key="index">' +
+            '<span id="blue">中文： {{q.chinese}}</span><br>' +
+            '<span id="brown">英文: </span>{{ q.english }}<br>' +
+            '<span id="red">日文: </span>{{q.japanese}}<br>' +
+            '<span id="black">作者： </span>{{q.author}}<br><br>' +
+            '</div></div>',
+
+    data() {  return { keyword: "", quotes };  },
+
+    computed: {
+      filterQuotes() {
+        const { quotes, keyword } = this;
+        return quotes.filter(({ chinese }) => chinese.includes(keyword));
+      },
+    },
+  })
+  app.mount('#app')
+</script>
+</body>
+</html>
