@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <title>Shopping cart</title>
+  <script src="https://unpkg.com/vue@next"></script>
+  <style>
+    h4 {
+      color: blue;
+      font-weight: bold;
+    }
+    p {
+      color: brown;
+      font-weight: bold;
+    }
+    span {
+      color: blue;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+<div id="shopping">
+  <form>
+    姓名: <input v-model="name"><br>
+    住址: <input v-model="address"><br>
+    手機: <input v-model="phone"><br>
+    電子郵件: <input v-model="email"><br>
+    指定送貨日期: <input type="date" v-model="date01"><br>
+    愛文芒果(1箱) 475元，購買數量: <input type="number" v-model="number01"><br>
+    有機木瓜(6台斤) 435元，購買數量: <input type="number" v-model="number02"><br>
+    黑鑽石桑葚(5台斤) 749元，購買數量: <input type="number" v-model="number03"><br>
+  </form>
+  <shopping_cart :my-name="name"
+                 :my-address="address"
+                 :my-phone="phone"
+                 :my-email="email"
+                 :my-date="date01"
+                 :my-no01="number01"
+                 :my-no02="number02"
+                 :my-no03="number03"
+  >
+  </shopping_cart>
+</div>
+
+<script>
+  const App = {
+    data() {
+      return {
+        name: '王光正',
+        address: '新北市樹林區中華路281號7樓之四',
+        phone: '0936676981',
+        email: 'kcwang@gm.ttu.edu.tw',
+        date01: '',
+        number01: 0,
+        number02: 0,
+        number03: 0
+      }
+    }
+  }
+
+  const app = Vue.createApp(App)
+
+  app.component('shopping_cart', {
+    props: ['myName','myAddress','myPhone','myEmail', 'myDate', 'myNo01', 'myNo02', 'myNo03' ],
+    methods: {
+      subtotal: function(price){
+        switch(price){
+          case 475:return price * this.myNo01;break;
+          case 435:return price * this.myNo02;break;
+          case 749:return price * this.myNo03;break;
+        }
+      },
+      totalAmount:function(){
+        return this.subtotal(475) + this.subtotal(435) + this.subtotal(749);
+      }
+    },
+    template: '<div><h4>大同農產購物清單如下:</h4>' +
+            '<p>姓名: {{ myName }} 先生/女士<br>' +
+            '住址: {{myAddress}}<br>' +
+            '手機: {{myPhone}}<br>' +
+            '電子郵件: {{myEmail}}<br>' +
+            '預定交貨日期: {{myDate}}<br>' +
+            '愛文芒果(1箱475元)共 {{myNo01}}單位，金額小計{{subtotal(475)}}元<br>' +
+            '有機木瓜(6台斤435元)共 {{myNo02}}單位，金額小計{{subtotal(435)}}元<br>' +
+            '黑鑽石桑葚(5台斤749元)共 {{myNo03}}單位，金額小計{{subtotal(749)}}元<br>' +
+            '金額總計為 {{totalAmount()}}元</p></div>'
+  })
+  app.mount('#shopping')
+</script>
+
+</body>
+</html>
