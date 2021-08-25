@@ -1,0 +1,45 @@
+<!DOCTYPE>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>顏色選擇器</title>
+  <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body>
+  <div id="app">
+    <h2 :style="fontColor">顏色選擇器</h2>
+    <main>
+      <section class="settings">
+        <div class="settings-container">
+          <label>透明度: {{ alpha / 100 }};</label>
+          <input type="range" min="0" max="100" v-model="alpha" />
+
+          <label>紅色: {{ red }}; </label>
+          <input type="range" min="0" max="255" v-model="red" />
+
+          <label>綠色: {{ green }}; </label>
+          <input type="range" min="0" max="255" v-model="green" />
+
+          <label>藍色: {{ blue }}; </label>
+          <input type="range" min="0" max="255" v-model="blue" />
+
+          <button type="button" @click.prevent="reset">Reset</button>
+        </div>
+      </section>
+      <section class="output">
+        <div class="box-container">
+          <div class="box" :style="box">
+          </div>
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
