@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>名言搜尋</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        td {
+            text-align: left;
+            vertical-align: top;
+        }
+        #blue {
+            color: blue;
+            font-weight: bold;
+        }
+        #brown {
+            color: brown;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+<h1>名言搜尋</h1>
+<form id="myForm">
+    <div>名言關鍵字 :
+        <input type="text" name="keyword" placeholder="請輸入名言關鍵字">
+        <br></div>
+    <br>
+    <button type="submit" id="submit">執行搜尋</button>
+    <button type="button" id="loadData">下載結果</button>
+</form>
+
+<table id="output"></table>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+
+    $('#myForm').submit(function (e) {
+        e.preventDefault();
+        var myData = $('form#myForm :input').serialize();
+        var url = 'https://script.google.com/a/gm.ttu.edu.tw/macros/s/AKfycbzax7oBtkuABK06FAQgiGcr6yISuTg7p2613mtG/exec'
+        console.log(myData)
+        $.ajax({
+            url: url
+            , method: 'POST'
+            , data: myData
+            , success: function (data) {
+                console.log(data)
+            }
+        })
+    })
+
+    $('#loadData').click(function () {
+        var url = 'https://script.google.com/macros/s/AKfycbwhSiUME1XEc-8lZ_p-DlOGN9vO4zQ-s734Jozup3HXhumPjS4/exec'
+        $.getJSON(url, function (data) {
+            var html = '<br>'
+            html += '<h4 id="brown">名言搜尋如下</h4><ul>';
+            html += '<table>'
+            html += '<tr>'
+            html += '<td class="w-30" id="blue">' + '中文' + '</td>'
+            html += '<td class="w-30" id="blue">' + '英文' + '</td>'
+            html += '<td class="w-10" id="blue">' + '作者' + '</td>'
+            html += '<td class="w-30" id="blue">' + '日文' + '</td>'
+            html += '<tr>'
+            $.each(data, function (key, val) {
+                html += '<tr>'
+                html += '<td class="w-30">' + val[0] + '</td>'
+                html += '<td class="w-30">' + val[1] + '</td>'
+                html += '<td class="w-10">' + val[2] + '</td>'
+                html += '<td class="w-30">' + val[3] + '</td>'
+                html += '<tr>'
+            })
+            html += '</table> '
+            $('#output').html(html);
+        })
+    })
+</script>
+</body>
+
+</html>
