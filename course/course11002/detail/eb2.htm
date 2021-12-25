@@ -1,63 +1,0 @@
-<HTML>
-<HEAD>
-<meta HTTP-EQUIV="Content-Type" content="text/html; charset=big5">
-<meta HTTP-EQUIV="Expires" CONTENT="Tue, 01 Jan 1980 1:00:00 GMT">
-<meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
-<title>班級排課</title>
-<style>
-<!--
-body	{font-family: 新細明體, Arial; font-size: 12pt; color: #000000}
-form	{font-family: 新細明體, Arial; font-size: 12pt;}
-input	{font-family: 新細明體, Arial; font-size: 12pt; color: #000000}
-select	{font-family: 新細明體, Arial; font-size: 12pt; color: #000000}
-h1	{font-family: 新細明體, Arial; font-size: 16pt; font-weight: bold}
-th	{font-family: 新細明體, Arial; font-size: 12pt; font-weight: bold; background-color: #F0E68C}
-td	{font-family: 新細明體, Arial; font-size: 12pt;}
-textarea	{font-family: 新細明體, arial; font-size: 12pt; color: #000000}
-pre, tt	{font-size: 12pt}
-a:active	{color:#FF0000; text-decoration: none}
-a:link		{color:#0000FF; text-decoration: none}
-a:visited	{color:#0000FF; text-decoration: none}
-a:hover	{color:#FF0000; text-decoration: none}
--->
-</style>
-</HEAD>
-<BODY bgcolor="#DFF7AB" topmargin="0">
-<center>
-
-<form method="POST" action="ClassCourses.asp" name="ClassSelect" >
-<table border="0" width="98%" cellspacing=0>
-<tr bgcolor="Khaki">
-	<td align="center" width="50%"><font size="+1">
-		<b>以班級排課(事經系所)</b></font></td>
-	<td>【班級】&nbsp;&nbsp;
-		<select name="SelClassNo" onchange="submit()">
-<option value="UB1A">UB1A</option><option value="UB1B">UB1B</option><option value="UB2A">UB2A</option><option value="UB2B">UB2B</option><option value="UB3A">UB3A</option><option value="UB3B">UB3B</option><option value="UB4A">UB4A</option><option value="UB4B">UB4B</option><option value="UB5A">UB5A</option><option value="UB5B">UB5B</option><option value="UB6A">UB6A</option><option value="UB6B">UB6B</option><option value="UB7A">UB7A</option><option value="UB7B">UB7B</option><option value="GB1.">GB1</option><option value="GB2.">GB2</option><option value="GB3.">GB3</option><option value="GB4.">GB4</option><option value="GB5.">GB5</option><option value="GB6.">GB6</option><option value="EB1.">EB1</option><option value="EB2." selected>EB2</option><option value="EB3.">EB3</option><option value="EB4.">EB4</option><option value="EB5.">EB5</option><option value="EB6.">EB6</option><option value="EB7.">EB7</option><option values="UGRR">UGRR</option>
-		</select>
-		&nbsp;&nbsp;&nbsp;<a href="Class.asp">班級功課表</a>
-	</td> </tr>
-</table> 
-</form>
-
-<table width="98%" border=1 cellspacing=0 cellpadding=2
-bordercolor="#6666AA">
-<tr>
-	<th width="7%">課程代碼</th>
-	<th width="17%">課程名稱(點選名稱進入排課)</th>
-	<th width="15%">教師</th>
-	<th width="4%">學分</th>
-	<th width="5%">應排節數</th>
-	<th width="5%">已排節數</th>
-	<th width="5%">人數上限</th>
-	<th width="5%">英語授課</th>
-	<th width="5%">業師協同</th>
-	<th width="4%">實務型</th>
-	<th width="4%">學程型</th>
-	<th width="4%">總整型</th>
-	<th width="20%">附註說明</th>    
-</tr>
-<tr><td align=center>B5140</td><td align=center><a href="SelectedSbj.asp?SbjNo=B5140">產業經濟學</a></td><td align=center>王佳琪</td><td align=center>3</td><td align=center>3</td><td align=center>3</td><td align=center>25</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>限在職專班選修</td></tr><tr><td align=center>B5710B</td><td align=center><a href="SelectedSbj.asp?SbjNo=B5710B">研究方法</a></td><td align=center>項維欣; 林德怡; 黃憲隆; 陳美芳; 孫碧娟; 梁詠貴; 王佳琪; 林南宏; 吳啟絹; 陳瑞璽</td><td align=center>3</td><td align=center>3</td><td align=center>3</td><td align=center>55</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>五年一貫課程(MBA與EMBA合上)</td></tr><tr><td align=center>B6210</td><td align=center><a href="SelectedSbj.asp?SbjNo=B6210">管理會計學</a></td><td align=center>孫碧娟</td><td align=center>3</td><td align=center>3</td><td align=center>3</td><td align=center>55</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>會計財經學程(大學部限已修畢其他會計學程科目的同學修習)(MBA與EMBA合上)</td></tr><tr><td align=center>B7180</td><td align=center><a href="SelectedSbj.asp?SbjNo=B7180">消費者行為專題</a></td><td align=center>陳美芳</td><td align=center>3</td><td align=center>3</td><td align=center>3</td><td align=center>25</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>限在職專班選修</td></tr><tr><td align=center>B8110</td><td align=center><a href="SelectedSbj.asp?SbjNo=B8110">投資學</a></td><td align=center>陳瑞璽</td><td align=center>3</td><td align=center>3</td><td align=center>3</td><td align=center>25</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>限在職專班選修</td></tr><tr><td align=center>G6012D</td><td align=center><a href="SelectedSbj.asp?SbjNo=G6012D">論文(二)</a></td><td align=center>黃憲隆</td><td align=center>2</td><td align=center>2</td><td align=center>2</td><td align=center>55</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>限在職專班修</td></tr></table>
-<br />
-</center>
-</body>
-</html>
