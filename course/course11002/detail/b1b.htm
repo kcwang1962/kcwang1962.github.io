@@ -1,0 +1,63 @@
+<HTML>
+<HEAD>
+<meta HTTP-EQUIV="Content-Type" content="text/html; charset=utf-8">
+<meta HTTP-EQUIV="Expires" CONTENT="Tue, 01 Jan 1980 1:00:00 GMT">
+<meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<title>班級排課</title>
+<style>
+<!--
+body	{font-family: 新細明體, Arial; font-size: 12pt; color: #000000}
+form	{font-family: 新細明體, Arial; font-size: 12pt;}
+input	{font-family: 新細明體, Arial; font-size: 12pt; color: #000000}
+select	{font-family: 新細明體, Arial; font-size: 12pt; color: #000000}
+h1	{font-family: 新細明體, Arial; font-size: 16pt; font-weight: bold}
+th	{font-family: 新細明體, Arial; font-size: 12pt; font-weight: bold; background-color: #F0E68C}
+td	{font-family: 新細明體, Arial; font-size: 12pt;}
+textarea	{font-family: 新細明體, arial; font-size: 12pt; color: #000000}
+pre, tt	{font-size: 12pt}
+a:active	{color:#FF0000; text-decoration: none}
+a:link		{color:#0000FF; text-decoration: none}
+a:visited	{color:#0000FF; text-decoration: none}
+a:hover	{color:#FF0000; text-decoration: none}
+-->
+</style>
+</HEAD>
+<BODY bgcolor="#DFF7AB" topmargin="0">
+<center>
+
+<form method="POST" action="ClassCourses.asp" name="ClassSelect" >
+<table border="0" width="98%" cellspacing=0>
+<tr bgcolor="Khaki">
+	<td align="center" width="50%"><font size="+1">
+		<b>以班級排課(事經系所)</b></font></td>
+	<td>【班級】&nbsp;&nbsp;
+		<select name="SelClassNo" onchange="submit()">
+<option value="UB1A">UB1A</option><option value="UB1B" selected>UB1B</option><option value="UB2A">UB2A</option><option value="UB2B">UB2B</option><option value="UB3A">UB3A</option><option value="UB3B">UB3B</option><option value="UB4A">UB4A</option><option value="UB4B">UB4B</option><option value="UB5A">UB5A</option><option value="UB5B">UB5B</option><option value="UB6A">UB6A</option><option value="UB6B">UB6B</option><option value="UB7A">UB7A</option><option value="UB7B">UB7B</option><option value="GB1.">GB1</option><option value="GB2.">GB2</option><option value="GB3.">GB3</option><option value="GB4.">GB4</option><option value="GB5.">GB5</option><option value="GB6.">GB6</option><option value="EB1.">EB1</option><option value="EB2.">EB2</option><option value="EB3.">EB3</option><option value="EB4.">EB4</option><option value="EB5.">EB5</option><option value="EB6.">EB6</option><option value="EB7.">EB7</option><option values="UGRR">UGRR</option>
+		</select>
+		&nbsp;&nbsp;&nbsp;<a href="Class.asp">班級功課表</a>
+	</td> </tr>
+</table> 
+</form>
+
+<table width="98%" border=1 cellspacing=0 cellpadding=2
+bordercolor="#6666AA">
+<tr>
+	<th width="7%">課程代碼</th>
+	<th width="17%">課程名稱(點選名稱進入排課)</th>
+	<th width="15%">教師</th>
+	<th width="4%">學分</th>
+	<th width="5%">應排節數</th>
+	<th width="5%">已排節數</th>
+	<th width="5%">人數上限</th>
+	<th width="5%">英語授課</th>
+	<th width="5%">業師協同</th>
+	<th width="4%">實務型</th>
+	<th width="4%">學程型</th>
+	<th width="4%">總整型</th>
+	<th width="20%">附註說明</th>    
+</tr>
+<tr><td align=center><font color=red>G0070N</font></td><td align=center><a href="SelectedSbj.asp?SbjNo=G0070N">勞作教育</a></td><td align=center>項維欣</td><td align=center>0</td><td align=center><font color="red">1</font></td><td align=center><font color="red">2</font></td><td align=center>55</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>新住民家庭成長協會陪讀志工</td></tr><tr><td align=center>B1112B</td><td align=center><a href="SelectedSbj.asp?SbjNo=B1112B">經濟學(二)</a></td><td align=center>王佳琪</td><td align=center>3</td><td align=center>3</td><td align=center>3</td><td align=center>55</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>&nbsp;</td></tr><tr><td align=center>B1222C</td><td align=center><a href="SelectedSbj.asp?SbjNo=B1222C">會計學(二)</a></td><td align=center>司徒雯</td><td align=center>3</td><td align=center>3</td><td align=center>3</td><td align=center>55</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>是</td><td align=center>&nbsp;</td><td>會計財經學程</td></tr><tr><td align=center>B2072B</td><td align=center><a href="SelectedSbj.asp?SbjNo=B2072B">事業經營(二)</a></td><td align=center>吳啟絹</td><td align=center>2</td><td align=center>2</td><td align=center>2</td><td align=center>55</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>&nbsp;</td></tr><tr><td align=center>B2822B</td><td align=center><a href="SelectedSbj.asp?SbjNo=B2822B">日語會話(二)</a></td><td align=center>吳鳳英</td><td align=center>1</td><td align=center>2</td><td align=center>2</td><td align=center>28</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>限110上學期修吳鳳英老師這個時段同學(誤選會被踢除)</td></tr><tr><td align=center>B2822C</td><td align=center><a href="SelectedSbj.asp?SbjNo=B2822C">日語會話(二)</a></td><td align=center>洪玉樹</td><td align=center>1</td><td align=center>2</td><td align=center>2</td><td align=center>30</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>限110上學期修洪玉樹老師這個時段同學(誤選會被踢除)</td></tr><tr><td align=center>B3372B</td><td align=center><a href="SelectedSbj.asp?SbjNo=B3372B">管理數學(二)</a></td><td align=center>項維欣</td><td align=center>3</td><td align=center>3</td><td align=center>3</td><td align=center>55</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>&nbsp;</td></tr><tr><td align=center>G0040C</td><td align=center><a href="SelectedSbj.asp?SbjNo=G0040C">現代公民素養</a></td><td align=center>李書孝; 韓昌宏; 黃采瑛; 陳淑敏; 包蒼龍; 陳明秀; 段國仁</td><td align=center>2</td><td align=center>2</td><td align=center>2</td><td align=center>0</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>限B1B必選，7位教師輪流上課</td></tr><tr><td align=center>G1432A</td><td align=center><a href="SelectedSbj.asp?SbjNo=G1432A">國語文能力表達(二)</a></td><td align=center>紀俊龍</td><td align=center>2</td><td align=center>2</td><td align=center>2</td><td align=center>55</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>B1B</td></tr><tr><td align=center>G1612C</td><td align=center><a href="SelectedSbj.asp?SbjNo=G1612C">日語(二)</a></td><td align=center>李慧莉</td><td align=center>1</td><td align=center>2</td><td align=center>2</td><td align=center>48</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>以開課班級學生優先。重修、轉學生至多5人，以選課先後順序決定</td></tr><tr><td align=center>G1822Q</td><td align=center><a href="SelectedSbj.asp?SbjNo=G1822Q">大一體育(二)</a></td><td align=center>陳楷竣</td><td align=center>0</td><td align=center>2</td><td align=center>2</td><td align=center>60</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>大一體育</td></tr></table>
+<br />
+</center>
+</body>
+</html>
