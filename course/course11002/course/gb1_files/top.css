@@ -1,0 +1,15 @@
+BODY             {font-family: Verdana, Arial, sans-serif; font-size: 10pt; color: black;}
+BODY             {background-color:#63B1B1;}
+
+TD               {font-family: Verdana, Arial, sans-serif; font-size: 10pt; color: black;} 
+
+IMG              {font-family: Verdana, Arial, sans-serif; font-size: 10pt; color: black;}
+                             
+A                {text-decoration: none;}
+A:link           {color: #333399;}
+A:visited        {color: #333399;}
+A:hover          {color: red; text-decoration: underline;}
+
+.thispage        {font-style: normal; color: #EBF5FF;}
+
+.tailcover       {position:relative; top: -4px; left:   4px;} 
