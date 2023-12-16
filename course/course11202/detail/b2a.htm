@@ -1,0 +1,96 @@
+
+<HTML>
+<HEAD>
+    <meta charset="utf-8">
+    <title>班級排課</title>
+    <style>
+        <!--
+        body	{font-family: 新細明體, Arial; font-size: 12pt; color: #000000}
+        form	{font-family: 新細明體, Arial; font-size: 12pt;}
+        input	{font-family: 新細明體, Arial; font-size: 12pt; color: #000000}
+        select	{font-family: 新細明體, Arial; font-size: 12pt; color: #000000}
+        h1	{font-family: 新細明體, Arial; font-size: 16pt; font-weight: bold}
+        th	{font-family: 新細明體, Arial; font-size: 12pt; font-weight: bold; background-color: #F0E68C}
+        td	{font-family: 新細明體, Arial; font-size: 12pt;}
+        textarea	{font-family: 新細明體, arial; font-size: 12pt; color: #000000}
+        pre, tt	{font-size: 12pt}
+        a:active	{color:#FF0000; text-decoration: none}
+        a:link		{color:#0000FF; text-decoration: none}
+        a:visited	{color:#0000FF; text-decoration: none}
+        a:hover	{color:#FF0000; text-decoration: none}
+        -->
+    </style>
+</HEAD>
+<BODY bgcolor="#DFF7AB" topmargin="0">
+<center>
+
+    <form method="POST" action="ClassCourses.asp" name="ClassSelect" >
+        <table border="0" width="98%" cellspacing=0>
+            <tr bgcolor="Khaki">
+                <td align="center" width="50%"><font size="+1">
+                    <b>以班級排課(事經系所)</b></font></td>
+                <td>【班級】&nbsp;&nbsp;
+                    <select name="SelClassNo" onchange="submit()">
+                        <option value="UB1.">UB1</option>
+                        <option value="UB2A" selected>UB2A</option>
+                        <option value="UB2B">UB2B</option>
+                        <option value="UB3A">UB3A</option>
+                        <option value="UB3B">UB3B</option>
+                        <option value="UB3F">UB3F</option>
+                        <option value="UB4A">UB4A</option>
+                        <option value="UB4B">UB4B</option>
+                        <option value="UB5A">UB5A</option>
+                        <option value="UB5B">UB5B</option>
+                        <option value="UB6A">UB6A</option>
+                        <option value="UB6B">UB6B</option>
+                        <option value="GB1.">GB1</option>
+                        <option value="GB2.">GB2</option>
+                        <option value="GB3.">GB3</option>
+                        <option value="GB4.">GB4</option>
+                        <option value="EB1.">EB1</option>
+                        <option value="EB2.">EB2</option>
+                        <option value="EB3.">EB3</option>
+                        <option value="EB4.">EB4</option>
+                        <option value="EB5.">EB5</option>
+                        <option values="UGRR">UGRR</option>
+
+                    </select>
+                    &nbsp;&nbsp;&nbsp;<a href="Class.asp">班級功課表</a>
+                </td> </tr>
+        </table>
+    </form>
+
+    <table width="98%" border=1 cellspacing=0 cellpadding=2
+           bordercolor="#6666AA">
+        <tr>
+            <th width="7%">課程代碼</th>
+            <th width="17%">課程名稱(點選名稱進入排課)</th>
+            <th width="15%">教師</th>
+            <th width="4%">學分</th>
+            <th width="5%">應排節數</th>
+            <th width="5%">已排節數</th>
+            <th width="5%">人數上限</th>
+            <th width="5%">英語授課</th>
+            <th width="5%">業師協同</th>
+            <th width="4%">實務型</th>
+            <th width="4%">學程型</th>
+            <th width="4%">總整型</th>
+            <th width="20%">附註說明</th>
+        </tr>
+        <tr><td align=center><font color=red>B2312A</font></td><td align=center><a href="SelectedSbj.asp?SbjNo=B2312A">統計學(二)</a></td><td align=center>王光正</td><td align=center>3</td><td align=center><font color="red">3</font></td><td align=center><font color="red">4</font></td><td align=center>55</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>週五請預留9:00~9:30為隨堂測驗時間</td></tr>
+        <tr><td align=center>B1222B</td><td align=center><a href="SelectedSbj.asp?SbjNo=B1222B">會計學(二)</a></td><td align=center>吳啟絹</td><td align=center>3</td><td align=center>3</td><td align=center>3</td><td align=center>55</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>是</td><td align=center>&nbsp;</td><td>重修班/會計財經學程</td></tr>
+        <tr><td align=center>B2030A</td><td align=center><a href="SelectedSbj.asp?SbjNo=B2030A">組織行為</a></td><td align=center>吳啟絹</td><td align=center>2</td><td align=center>2</td><td align=center>2</td><td align=center>55</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>&nbsp;</td></tr>
+        <tr><td align=center>B2210</td><td align=center><a href="SelectedSbj.asp?SbjNo=B2210">中等會計</a></td><td align=center>司徒雯</td><td align=center>3</td><td align=center>3</td><td align=center>3</td><td align=center>55</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>是</td><td align=center>&nbsp;</td><td>&nbsp;</td></tr>
+        <tr><td align=center>B2750</td><td align=center><a href="SelectedSbj.asp?SbjNo=B2750">事業倫理</a></td><td align=center>卓文記</td><td align=center>2</td><td align=center>2</td><td align=center>2</td><td align=center>55</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>&nbsp;</td></tr>
+        <tr><td align=center>B2812A</td><td align=center><a href="SelectedSbj.asp?SbjNo=B2812A">英語會話(二)</a></td><td align=center>古貿昌</td><td align=center>1</td><td align=center>2</td><td align=center>2</td><td align=center>34</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>限112上學期修本時段課程的同學</td></tr>
+        <tr><td align=center>B2812B</td><td align=center><a href="SelectedSbj.asp?SbjNo=B2812B">英語會話(二)</a></td><td align=center>古貿昌</td><td align=center>1</td><td align=center>2</td><td align=center>2</td><td align=center>36</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>限112上學期修本時段課程的同學</td></tr>
+        <tr><td align=center>B2824B</td><td align=center><a href="SelectedSbj.asp?SbjNo=B2824B">日語會話(四)</a></td><td align=center>良本惠莉</td><td align=center>1</td><td align=center>2</td><td align=center>2</td><td align=center>30</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>限112上學期修本時段課程的同學</td></tr>
+        <tr><td align=center>B2824C</td><td align=center><a href="SelectedSbj.asp?SbjNo=B2824C">日語會話(四)</a></td><td align=center>良本惠莉</td><td align=center>1</td><td align=center>2</td><td align=center>2</td><td align=center>30</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>限112上學期修本時段課程的同學</td></tr>
+        <tr><td align=center>B3420A</td><td align=center><a href="SelectedSbj.asp?SbjNo=B3420A">消費者行為</a></td><td align=center>陳美芳</td><td align=center>2</td><td align=center>2</td><td align=center>2</td><td align=center>55</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>是</td><td align=center>&nbsp;</td><td>行銷學程</td></tr>
+        <tr><td align=center>B4660</td><td align=center><a href="SelectedSbj.asp?SbjNo=B4660">網路首頁設計</a></td><td align=center>王光正</td><td align=center>2</td><td align=center>2</td><td align=center>2</td><td align=center>35</td><td align=center>&nbsp;</td><td align=center>是</td><td align=center>是</td><td align=center>是</td><td align=center>&nbsp;</td><td>行銷學程(課程含教Javascript程式寫作，得認列為通識課程之「邏輯運算及程式設計」(但不計入通識學分))</td></tr>
+        <tr><td align=center>G1614B</td><td align=center><a href="SelectedSbj.asp?SbjNo=G1614B">日語(四)</a></td><td align=center>林芷苓</td><td align=center>1</td><td align=center>2</td><td align=center>2</td><td align=center>48</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>以開課班級學生優先。重修、轉學生至多5人，以選課先後順序決定</td></tr>
+    </table>
+    <br />
+</center>
+</body>
+</html>
