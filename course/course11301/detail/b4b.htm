@@ -1,0 +1,98 @@
+
+<HTML>
+<HEAD>
+    <meta charset="utf-8">
+    <title>班級排課</title>
+    <style>
+        <!--
+        body	{font-family: 新細明體, Arial; font-size: 12pt; color: #000000}
+        form	{font-family: 新細明體, Arial; font-size: 12pt;}
+        input	{font-family: 新細明體, Arial; font-size: 12pt; color: #000000}
+        select	{font-family: 新細明體, Arial; font-size: 12pt; color: #000000}
+        h1	{font-family: 新細明體, Arial; font-size: 16pt; font-weight: bold}
+        th	{font-family: 新細明體, Arial; font-size: 12pt; font-weight: bold; background-color: #F0E68C}
+        td	{font-family: 新細明體, Arial; font-size: 12pt;}
+        textarea	{font-family: 新細明體, arial; font-size: 12pt; color: #000000}
+        pre, tt	{font-size: 12pt}
+        a:active	{color:#FF0000; text-decoration: none}
+        a:link		{color:#0000FF; text-decoration: none}
+        a:visited	{color:#0000FF; text-decoration: none}
+        a:hover	{color:#FF0000; text-decoration: none}
+        -->
+    </style>
+</HEAD>
+<BODY bgcolor="#DFF7AB" topmargin="0">
+<center>
+
+    <form method="POST" action="ClassCourses.asp" name="ClassSelect" >
+        <table border="0" width="98%" cellspacing=0>
+            <tr bgcolor="Khaki">
+                <td align="center" width="50%"><font size="+1">
+                    <b>以班級排課(事經系所)</b></font></td>
+                <td>【班級】&nbsp;&nbsp;
+                    <select name="SelClassNo" onchange="submit()">
+                        <option value="UB1.">UB1</option>
+                        <option value="UB2.">UB2</option>
+                        <option value="UB3A">UB3A</option>
+                        <option value="UB3B">UB3B</option>
+                        <option value="UB3F">UB3F</option>
+                        <option value="UB4A">UB4A</option>
+                        <option value="UB4B" selected>UB4B</option>
+                        <option value="UB5A">UB5A</option>
+                        <option value="UB5B">UB5B</option>
+                        <option value="UB6A">UB6A</option>
+                        <option value="UB6B">UB6B</option>
+                        <option value="GB1.">GB1</option>
+                        <option value="GB2.">GB2</option>
+                        <option value="GB3.">GB3</option>
+                        <option value="GB4.">GB4</option>
+                        <option value="EB1.">EB1</option>
+                        <option value="EB2.">EB2</option>
+                        <option value="EB3.">EB3</option>
+                        <option value="EB4.">EB4</option>
+                        <option value="EB5.">EB5</option>
+                        <option values="UGRR">UGRR</option>
+
+                    </select>
+                    &nbsp;&nbsp;&nbsp;<a href="Class.asp">班級功課表</a>
+                </td> </tr>
+        </table>
+    </form>
+
+    <table width="98%" border=1 cellspacing=0 cellpadding=2
+           bordercolor="#6666AA">
+        <tr>
+            <th width="7%">課程代碼</th>
+            <th width="17%">課程名稱(點選名稱進入排課)</th>
+            <th width="15%">教師</th>
+            <th width="4%">學分</th>
+            <th width="5%">應排節數</th>
+            <th width="5%">已排節數</th>
+            <th width="5%">人數上限</th>
+            <th width="5%">英語授課</th>
+            <th width="5%">業師協同</th>
+            <th width="4%">實務型</th>
+            <th width="4%">學程型</th>
+            <th width="4%">總整型</th>
+            <th width="20%">附註說明</th>
+        </tr>
+        <tr><td align=center><font color=red>B3030</font></td><td align=center><a href="SelectedSbj.asp?SbjNo=B3030">期刊論文研讀(三)</a></td><td align=center>王光正; 陳瑞璽</td><td align=center>1</td><td align=center><font color="red">2</font></td><td align=center><font color="red">0</font></td><td align=center>55</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>是</td><td>&nbsp;</td></tr>
+        <tr><td align=center>B3350</td><td align=center><a href="SelectedSbj.asp?SbjNo=B3350">統計方法應用</a></td><td align=center>林南宏</td><td align=center>2</td><td align=center>2</td><td align=center>2</td><td align=center>40</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>是</td><td align=center>&nbsp;</td><td>行銷學程</td></tr>
+        <tr><td align=center>B3470</td><td align=center><a href="SelectedSbj.asp?SbjNo=B3470">行銷個案分析</a></td><td align=center>林南宏</td><td align=center>2</td><td align=center>2</td><td align=center>2</td><td align=center>55</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>是</td><td align=center>&nbsp;</td><td>行銷學程</td></tr>
+        <tr><td align=center>B3670</td><td align=center><a href="SelectedSbj.asp?SbjNo=B3670">網頁動畫與設計</a></td><td align=center>王光正</td><td align=center>2</td><td align=center>2</td><td align=center>2</td><td align=center>35</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>是</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>&nbsp;</td></tr>
+        <tr><td align=center>B4080</td><td align=center><a href="SelectedSbj.asp?SbjNo=B4080">策略管理</a></td><td align=center>梁詠貴</td><td align=center>3</td><td align=center>3</td><td align=center>3</td><td align=center>60</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>是</td><td align=center>&nbsp;</td><td>國際經營學程</td></tr>
+        <tr><td align=center>B4540</td><td align=center><a href="SelectedSbj.asp?SbjNo=B4540">作業管理</a></td><td align=center>黃憲隆</td><td align=center>3</td><td align=center>3</td><td align=center>3</td><td align=center>51</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>大四必修(有衝堂同學，可修GB1周三的作業管理)</td></tr>
+        <tr><td align=center>B4930</td><td align=center><a href="SelectedSbj.asp?SbjNo=B4930">經營實務講座</a></td><td align=center>黃憲隆</td><td align=center>2</td><td align=center>2</td><td align=center>2</td><td align=center>55</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>是</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>&nbsp;</td></tr>
+        <tr><td align=center>B5020</td><td align=center><a href="SelectedSbj.asp?SbjNo=B5020">組織與經營理論</a></td><td align=center>梁詠貴</td><td align=center>3</td><td align=center>3</td><td align=center>3</td><td align=center>55</td><td align=center>是</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>英語授課</td></tr>
+        <tr><td align=center>B5080</td><td align=center><a href="SelectedSbj.asp?SbjNo=B5080">大師講堂(一)</a></td><td align=center>王佳琪; 吳啟絹</td><td align=center>3</td><td align=center>3</td><td align=center>3</td><td align=center>120</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>是</td><td align=center>&nbsp;</td><td align=center>是</td><td>&nbsp;</td></tr>
+        <tr><td align=center>B6470</td><td align=center><a href="SelectedSbj.asp?SbjNo=B6470">大數據行銷</a></td><td align=center>方怡文</td><td align=center>2</td><td align=center>2</td><td align=center>2</td><td align=center>55</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>&nbsp;</td></tr>
+        <tr><td align=center>B6680</td><td align=center><a href="SelectedSbj.asp?SbjNo=B6680">國際企業研究</a></td><td align=center>梁詠貴</td><td align=center>2</td><td align=center>2</td><td align=center>2</td><td align=center>55</td><td align=center>是</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>是</td><td align=center>&nbsp;</td><td>英語授課(國際經營學程)</td></tr>
+        <tr><td align=center>B8070</td><td align=center><a href="SelectedSbj.asp?SbjNo=B8070">專案管理實務</a></td><td align=center>黃憲隆</td><td align=center>2</td><td align=center>2</td><td align=center>2</td><td align=center>55</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>&nbsp;</td></tr>
+        <tr><td align=center>G0083B</td><td align=center><a href="SelectedSbj.asp?SbjNo=G0083B">校外實習</a></td><td align=center>王光正; 吳啟絹</td><td align=center>3</td><td align=center>3</td><td align=center>3</td><td align=center>55</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>是</td><td align=center>&nbsp;</td><td align=center>是</td><td>限校外實習240小時同學選修</td></tr>
+        <tr><td align=center>G0084</td><td align=center><a href="SelectedSbj.asp?SbjNo=G0084">校外實習</a></td><td align=center>王光正; 吳啟絹</td><td align=center>4</td><td align=center>4</td><td align=center>4</td><td align=center>55</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>是</td><td align=center>&nbsp;</td><td align=center>是</td><td>限校外實習320小時同學選修</td></tr>
+        <tr><td align=center>G5120C</td><td align=center><a href="SelectedSbj.asp?SbjNo=G5120C">經營實務講座</a></td><td align=center>王佳琪</td><td align=center>2</td><td align=center>2</td><td align=center>2</td><td align=center>55</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td align=center>是</td><td align=center>&nbsp;</td><td align=center>&nbsp;</td><td>&nbsp;</td></tr>
+    </table>
+    <br />
+</center>
+</body>
+</html>
