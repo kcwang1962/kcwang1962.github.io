@@ -25,6 +25,9 @@
  Default state (no keyboard focus)
  ==================================*/
 /* Overall Wrapper */
+div.anythingSlider .arrow {
+	top: 40px;
+}
 .anythingSlider-default {
 	margin: 0 auto;
 	/* 45px right & left padding for the arrows, 28px @ bottom for navigation */
