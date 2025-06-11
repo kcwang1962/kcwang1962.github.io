@@ -1,0 +1,235 @@
+
+<HTML>
+<HEAD>
+    <meta charset="utf-8">
+    <title>Schedule by teacher</title>
+    <style>
+        <!--
+        body	{font-family: 新細明體, Arial; font-size: 12pt; color: #000000}
+        form	{font-family: 新細明體, Arial; font-size: 12pt;}
+        input	{font-family: 新細明體, Arial; font-size: 12pt; color: #000000}
+        select	{font-family: 新細明體, Arial; font-size: 12pt; color: #000000}
+        h1	{font-family: 新細明體, Arial; font-size: 16pt; font-weight: bold}
+        th	{font-family: 新細明體, Arial; font-size: 12pt; font-weight: bold; background-color: #F0E68C}
+        td	{font-family: 新細明體, Arial; font-size: 12pt;}
+        textarea	{font-family: 新細明體, arial; font-size: 12pt; color: #000000}
+        pre, tt	{font-size: 12pt}
+        a:active	{color:#FF0000; text-decoration: none}
+        a:link		{color:#0000FF; text-decoration: none}
+        a:visited	{color:#0000FF; text-decoration: none}
+        a:hover	{color:#FF0000; text-decoration: none}
+        -->
+    </style>
+</HEAD>
+<BODY bgcolor="#DFF7AB" topmargin="0">
+<center>
+
+    <form method="POST" action="teacher.asp" name="ChooseTchNo">
+        <table border="0" width="98%" cellspacing=0>
+            <tr bgcolor="Khaki">
+                <td align="center" width="50%"><font size="+1">
+                    <b>以教師排課(事經系所)</b></font></td>
+                <td>【教師】&nbsp;&nbsp;
+                    <select name="SelTchNo" onchange="submit()">
+                        <option value="05A05" selected>陳美芳</option>
+                        <option value="05B03">梁詠貴</option>
+                        <option value="05B04">林南宏</option>
+                        <option value="05B06">王佳琪</option>
+                        <option value="05B08">陳瑞璽</option>
+                        <option value="05B09">黃憲隆</option>
+                        <option value="05C02">吳啟絹</option>
+                        <option value="05C07">林德怡</option>
+                        <option value="05C09">方怡文</option>
+                        <option value="05D01">王光正</option>
+                        <option value="05D06">司徒雯</option>
+                        <option value="05S16">蕭富庭</option>
+                        <option value="05S17">范垂玲</option>
+                        <option value="05S18">王甲</option>
+                        <option value="05Y13">李國豪</option>
+                        <option value="05Z14">孔令明</option>
+
+                    </select> </td> </tr>
+        </table>
+    </form>
+    <table width="98%" border=1 cellspacing=0 cellpadding=2
+           bordercolor="#6666AA">
+        <tr>
+            <td width="15%" align="center" bgcolor="Darkblue">
+                <font color=Yellow>星期六</font></td>
+            <td width="15%" align="center" bgcolor="Darkblue">
+                <font color=Yellow>星期五</font></td>
+            <td width="15%" align="center" bgcolor="Darkblue">
+                <font color=Yellow>星期四</font></td>
+            <td width="15%" align="center" bgcolor="Darkblue">
+                <font color=Yellow>星期三</font></td>
+            <td width="15%" align="center" bgcolor="Darkblue">
+                <font color=Yellow>星期二</font></td>
+            <td width="15%" align="center" bgcolor="Darkblue">
+                <font color=Yellow>星期一</font></td>
+            <td width="10%" align="center" bgcolor="Darkblue">
+                <font color=White>節　次</font></td>
+        </tr>
+
+        <tr>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" align="center" bgcolor="DarkBlue"><font color="white">第一節</font></td>
+        </tr>
+        <tr>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf" align="center"><a href=SelectedSbj.asp?SbjNo=B2420A>行銷管理A</a><br><a href=../lib/settimeplace.asp?SbjNo=B2420A&SbjName=行銷管理&SchdTime=402&SchdPlace=A5-508&SetMode=3&CallingAsp=../Schedule/teacher>A5-508</a> &nbsp;UB2A<br>
+            </td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" align="center" bgcolor="DarkBlue"><font color="white">第二節</font></td>
+        </tr>
+        <tr>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf" align="center"><a href=SelectedSbj.asp?SbjNo=G5011A>專題研究一A</a><br><a href=../lib/settimeplace.asp?SbjNo=G5011A&SbjName=專題研究(一)&SchdTime=603&SchdPlace=A5-509&SetMode=3&CallingAsp=../Schedule/teacher>A5-509</a> &nbsp;GB1<br>
+                <a href=SelectedSbj.asp?SbjNo=G5011B>專題研究一B</a><br><a href=../lib/settimeplace.asp?SbjNo=G5011B&SbjName=專題研究(一)&SchdTime=603&SchdPlace=A5-509&SetMode=3&CallingAsp=../Schedule/teacher>A5-509</a> &nbsp;EB1.<br>
+            </td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf" align="center"><a href=SelectedSbj.asp?SbjNo=B2420A>行銷管理A</a><br><a href=../lib/settimeplace.asp?SbjNo=B2420A&SbjName=行銷管理&SchdTime=403&SchdPlace=A5-508&SetMode=3&CallingAsp=../Schedule/teacher>A5-508</a> &nbsp;UB2A<br>
+            </td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf" align="center"><a href=SelectedSbj.asp?SbjNo=B4410>國貿實務</a><br><a href=../lib/settimeplace.asp?SbjNo=B4410&SbjName=國際貿易實務&SchdTime=203&SchdPlace=A5-504&SetMode=3&CallingAsp=../Schedule/teacher>A5-504</a> &nbsp;UB3<br>
+            </td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" align="center" bgcolor="DarkBlue"><font color="white">第三節</font></td>
+        </tr>
+        <tr>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf" align="center"><a href=SelectedSbj.asp?SbjNo=B2420A>行銷管理A</a><br><a href=../lib/settimeplace.asp?SbjNo=B2420A&SbjName=行銷管理&SchdTime=404&SchdPlace=A5-508&SetMode=3&CallingAsp=../Schedule/teacher>A5-508</a> &nbsp;UB2A<br>
+            </td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf" align="center"><a href=SelectedSbj.asp?SbjNo=B4410>國貿實務</a><br><a href=../lib/settimeplace.asp?SbjNo=B4410&SbjName=國際貿易實務&SchdTime=204&SchdPlace=A5-504&SetMode=3&CallingAsp=../Schedule/teacher>A5-504</a> &nbsp;UB3<br>
+            </td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" align="center" bgcolor="DarkBlue"><font color="white">第四節</font></td>
+        </tr>
+        <tr>
+            <td bordercolor="#9999FF" bgcolor="paleGreen"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="paleGreen"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="paleGreen"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="paleGreen"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="paleGreen"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="paleGreen"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" align="center" bgcolor="DarkRed"><font color="white">中　午</font></td>
+        </tr>
+        <tr>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf" align="center"><a href=SelectedSbj.asp?SbjNo=G2680>經濟概論</a><br><a href=../lib/settimeplace.asp?SbjNo=G2680&SbjName=經濟學概論&SchdTime=406&SchdPlace=A5-502&SetMode=3&CallingAsp=../Schedule/teacher>A5-502</a> &nbsp;UGRR<br>
+            </td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf" align="center"><a href=SelectedSbj.asp?SbjNo=B3440>廣告管理</a><br><a href=../lib/settimeplace.asp?SbjNo=B3440&SbjName=廣告管理&SchdTime=206&SchdPlace=A5-510&SetMode=3&CallingAsp=../Schedule/teacher>A5-510</a> &nbsp;UB3<br>
+            </td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" align="center" bgcolor="DarkBlue"><font color="white">第五節</font></td>
+        </tr>
+        <tr>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf" align="center"><a href=SelectedSbj.asp?SbjNo=G2680>經濟概論</a><br><a href=../lib/settimeplace.asp?SbjNo=G2680&SbjName=經濟學概論&SchdTime=407&SchdPlace=A5-502&SetMode=3&CallingAsp=../Schedule/teacher>A5-502</a> &nbsp;UGRR<br>
+            </td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf" align="center"><a href=SelectedSbj.asp?SbjNo=B3440>廣告管理</a><br><a href=../lib/settimeplace.asp?SbjNo=B3440&SbjName=廣告管理&SchdTime=207&SchdPlace=A5-510&SetMode=3&CallingAsp=../Schedule/teacher>A5-510</a> &nbsp;UB3<br>
+            </td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" align="center" bgcolor="DarkBlue"><font color="white">第六節</font></td>
+        </tr>
+        <tr>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" align="center" bgcolor="DarkBlue"><font color="white">第七節</font></td>
+        </tr>
+        <tr>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" align="center" bgcolor="DarkBlue"><font color="white">第八節</font></td>
+        </tr>
+        <tr>
+            <td bordercolor="#9999FF" bgcolor="paleGreen"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="paleGreen"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="paleGreen"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="paleGreen"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="paleGreen"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="paleGreen"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" align="center" bgcolor="DarkRed"><font color="white">傍　晚</font></td>
+        </tr>
+        <tr>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf" align="center"><a href=SelectedSbj.asp?SbjNo=B6900>經營專題</a><br><a href=../lib/settimeplace.asp?SbjNo=B6900&SbjName=經營專題&SchdTime=511&SchdPlace=A5-509&SetMode=3&CallingAsp=../Schedule/teacher>A5-509</a> &nbsp;EB2<br>
+            </td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" align="center" bgcolor="DarkBlue"><font color="white">第九節</font></td>
+        </tr>
+        <tr>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf" align="center"><a href=SelectedSbj.asp?SbjNo=B6900>經營專題</a><br><a href=../lib/settimeplace.asp?SbjNo=B6900&SbjName=經營專題&SchdTime=512&SchdPlace=A5-509&SetMode=3&CallingAsp=../Schedule/teacher>A5-509</a> &nbsp;EB2<br>
+            </td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" align="center" bgcolor="DarkBlue"><font color="white">第10節</font></td>
+        </tr>
+        <tr>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" align="center" bgcolor="DarkBlue"><font color="white">第11節</font></td>
+        </tr>
+        <tr>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" align="center" bgcolor="DarkBlue"><font color="white">第12節</font></td>
+        </tr>
+    </table><br>
+
+    <table width="98%" border=1 cellspacing=0 cellpadding=0
+           bordercolor="#6666AA">
+        <tr>
+            <th width="13%">課程代碼</th>
+            <th width="35%">課程名稱(點選進入排課)</th>
+            <th width="13%">學分</th>
+            <th width="13%">應排節次</th>
+            <th width="13%">已排節次</th>
+            <th width="13%">人數上限</th>
+        </tr>
+        <tr><td align=center>B2420A</td><td align=center><a href="SelectedSbj.asp?SbjNo=B2420A&CallingAsp=teacher">行銷管理</a></td><td align=center>3</td><td align=center>3</td><td align=center>3</td><td align=center>55</td></tr>
+        <tr><td align=center>B3440</td><td align=center><a href="SelectedSbj.asp?SbjNo=B3440&CallingAsp=teacher">廣告管理</a></td><td align=center>2</td><td align=center>2</td><td align=center>2</td><td align=center>55</td></tr>
+        <tr><td align=center>B4410</td><td align=center><a href="SelectedSbj.asp?SbjNo=B4410&CallingAsp=teacher">國際貿易實務</a></td><td align=center>2</td><td align=center>2</td><td align=center>2</td><td align=center>55</td></tr>
+        <tr><td align=center>B6900</td><td align=center><a href="SelectedSbj.asp?SbjNo=B6900&CallingAsp=teacher">經營專題</a></td><td align=center>2</td><td align=center>2</td><td align=center>2</td><td align=center>55</td></tr>
+        <tr><td align=center>G2680</td><td align=center><a href="SelectedSbj.asp?SbjNo=G2680&CallingAsp=teacher">經濟學概論</a></td><td align=center>2</td><td align=center>2</td><td align=center>2</td><td align=center>55</td></tr>
+        <tr><td align=center>G5011A</td><td align=center><a href="SelectedSbj.asp?SbjNo=G5011A&CallingAsp=teacher">專題研究(一)</a></td><td align=center>1</td><td align=center>1</td><td align=center>1</td><td align=center>55</td></tr>
+        <tr><td align=center>G5011B</td><td align=center><a href="SelectedSbj.asp?SbjNo=G5011B&CallingAsp=teacher">專題研究(一)</a></td><td align=center>1</td><td align=center>1</td><td align=center>1</td><td align=center>55</td></tr>
+    </table>
+    <br />
+</center>
+</body>
+</html>
