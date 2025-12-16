@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+
+	<title>經營系所114上課表預覽第版</title>
+	<link rel="shortcut icon" href="demos/images/favicon.ico">
+	<link rel="apple-touch-icon" href="demos/images/apple-touch-icon.png">
+
+	<!-- jQuery (required) -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+
+	<!-- Demo stuff -->
+	<link rel="stylesheet" href="demos/css/page.css">
+
+	<!-- Anything Slider optional plugins, but needed so the embeded video controls will work in IE -->
+	<!-- http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js -->
+	<script src="js/swfobject.js"></script>
+
+	<!-- Anything Slider -->
+	<link rel="stylesheet" href="css/anythingslider.css">
+	<script src="js/jquery.anythingslider.js"></script>
+
+	<!-- AnythingSlider video extension; optional, but needed to control video pause/play -->
+	<script src="js/jquery.anythingslider.video.js"></script>
+
+	<script>
+		// DOM Ready
+		$(function(){
+			$('#slider').anythingSlider({
+				resizeContents      : true,
+				addWmodeToObject    : 'transparent',
+				navigationFormatter : function(index, panel){ // Format navigation labels with text
+					return ['����'][index - 1];
+				}
+			});
+		});
+	</script>
+
+</head>
+
+<body>
+
+	<br>
+	<div id="nav">
+		<a href="explain.html">排課說明</a>
+        <a href="revise.html">修正說明</a>
+		<a href="index.html">班級課表</a>
+		<a href="detail.html">排課教室</a>
+		<a href="teacher.html">教師課表</a>
+	</div>
+	<br><br>
+
+	<!-- START AnythingSlider -->
+	<ul id="slider">
+
+		<!-- Vimeo: iframe -->
+		<li class="panel1"><iframe src="info01.htm" width="680" height="600" marginwidth="0" marginheight="0" scrolling="yes" frameborder="0" align="left"></iframe></li>
+
+	</ul> <!-- END AnythingSlider -->
+
+	<br>
+
+	<!-- Video compatibility table --><br>
+
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+
+	<title>經營系所114下課表預覽第1版</title>
+	<link rel="shortcut icon" href="demos/images/favicon.ico">
+	<link rel="apple-touch-icon" href="demos/images/apple-touch-icon.png">
+
+	<!-- jQuery (required) -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+
+	<!-- Demo stuff -->
+	<link rel="stylesheet" href="demos/css/page.css">
+
+	<!-- Anything Slider optional plugins, but needed so the embeded video controls will work in IE -->
+	<!-- http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js -->
+	<script src="js/swfobject.js"></script>
+
+	<!-- Anything Slider -->
+	<link rel="stylesheet" href="css/anythingslider.css">
+	<script src="js/jquery.anythingslider.js"></script>
+
+	<!-- AnythingSlider video extension; optional, but needed to control video pause/play -->
+	<script src="js/jquery.anythingslider.video.js"></script>
+
+	<script>
+		// DOM Ready
+		$(function(){
+			$('#slider').anythingSlider({
+//				mode                : 'vertical',
+				resizeContents      : false,
+				addWmodeToObject    : 'transparent',
+				navigationFormatter : function(index, panel){ // Format navigation labels with text
+					return ['B1A', 'B1B','B2A', 'B2B', 'B3', 'B4A', 'B4B', 'GB1', 'GB2', 'EB1', 'EB2'][index - 1];
+				}
+			});
+		});
+	</script>
+
+</head>
+
+<body>
+
+	<br>
+	<div id="nav">
+		<a href="explain.html">排課說明</a>     
+        <a href="revise.html">修正說明</a>	
+        <a href="index.html">班級課表</a>
+		<a href="detail.html">排課教室</a>
+		<a href="teacher.html">教師課表</a>
+	</div>
+	<div id="note">請用下表的左右圖示、或下方的標籤進行流覽</div>
+    <br>
+	<!-- START AnythingSlider -->
+	<ul id="slider">
+
+
+		<li class="panel1"><iframe src="course/b1a.htm" width="680" height="1200" marginwidth="0" marginheight="0" scrolling="yes" frameborder="0" align="left"></iframe></li>
+		<li class="panel2"><iframe src="course/b1b.htm" width="680" height="1200" marginwidth="0" marginheight="0" scrolling="yes" frameborder="0" align="left"></iframe></li>
+		<li class="panel3"><iframe src="course/b2a.htm" width="680" height="1200" marginwidth="0" marginheight="0" scrolling="yes" frameborder="0" align="left"></iframe></li>
+		<li class="panel4"><iframe src="course/b2b.htm" width="680" height="1200" marginwidth="0" marginheight="0" scrolling="yes" frameborder="0" align="left"></iframe></li>
+		<li class="panel5"><iframe src="course/b3.htm" width="680" height="1200" marginwidth="0" marginheight="0" scrolling="yes" frameborder="0" align="left"></iframe></li>
+		<li class="panel6"><iframe src="course/b4a.htm" width="680" height="1200" marginwidth="0" marginheight="0" scrolling="yes" frameborder="0" align="left"></iframe></li>
+		<li class="panel7"><iframe src="course/b4b.htm" width="680" height="1200" marginwidth="0" marginheight="0" scrolling="yes" frameborder="0" align="left"></iframe></li>
+		<li class="panel8"><iframe src="course/gb1.htm" width="680" height="1200" marginwidth="0" marginheight="0" scrolling="yes" frameborder="0" align="left"></iframe></li>
+		<li class="panel9"><iframe src="course/gb2.htm" width="680" height="1200" marginwidth="0" marginheight="0" scrolling="yes" frameborder="0" align="left"></iframe></li></li></li>
+		<li class="panel10"><iframe src="course/eb1.htm" width="680" height="1200" marginwidth="0" marginheight="0" scrolling="yes" frameborder="0" align="left"></iframe></li>
+        <li class="panel11"><iframe src="course/eb2.htm" width="680" height="1200" marginwidth="0" marginheight="0" scrolling="yes" frameborder="0" align="left"></iframe></li>
+
+	</ul> <!-- END AnythingSlider -->
+
+	<br>
+
+	<!-- Video compatibility table --><br>
+
+</body>
+
+</html>
