@@ -1,0 +1,231 @@
+
+<HTML>
+<HEAD>
+    <meta charset="utf-8">
+    <title>班級排課</title>
+    <style>
+        <!--
+        body	{font-family: 新細明體, Arial; font-size: 12pt; color: #000000}
+        form	{font-family: 新細明體, Arial; font-size: 12pt;}
+        input	{font-family: 新細明體, Arial; font-size: 12pt; color: #000000}
+        select	{font-family: 新細明體, Arial; font-size: 12pt; color: #000000}
+        h1	{font-family: 新細明體, Arial; font-size: 16pt; font-weight: bold}
+        th	{font-family: 新細明體, Arial; font-size: 12pt; font-weight: bold; background-color: #F0E68C}
+        td	{font-family: 新細明體, Arial; font-size: 12pt;}
+        textarea	{font-family: 新細明體, arial; font-size: 12pt; color: #000000}
+        pre, tt	{font-size: 12pt}
+        a:active	{color:#FF0000; text-decoration: none}
+        a:link		{color:#0000FF; text-decoration: none}
+        a:visited	{color:#0000FF; text-decoration: none}
+        a:hover	{color:#FF0000; text-decoration: none}
+        -->
+    </style>
+</HEAD>
+<BODY bgcolor="#DFF7AB" topmargin="0">
+<center>
+
+    <Script Language="JavaScript">
+        <!--
+        function UpdateTime(SbjNo, Place, Class)
+        {
+            var STRing = Place + "&SbjNo=" + SbjNo + "&ClassNo=" + Class + "&CallingAsp=class";
+            parent.d.location.replace("classcrt.asp?classroom=" + STRing);
+        }
+        -->
+    </Script>
+
+    <form method="POST" action="class.asp" name="ClassSelect" >
+        <table border="0" width="98%" cellspacing=0>
+            <tr bgcolor="Khaki">
+                <td align="center" width="50%"><font size="+1">
+                    <b>以班級排課(事資系所)</b></font></td>
+                <td>【班級】&nbsp;&nbsp;
+                    <select name="SelClassNo" onchange="submit()">
+                        <option value="UB1A" selected>UB1A</option>
+                        <option value="UB1B">UB1B</option>
+                        <option value="UB2A">UB2A</option>
+                        <option value="UB2B">UB2B</option>
+                        <option value="UB3.">UB3</option>
+                        <option value="UB4A">UB4A</option>
+                        <option value="UB4B">UB4B</option>
+                        <option value="UB5A">UB5A</option>
+                        <option value="UB5B">UB5B</option>
+                        <option value="UB6A">UB6A</option>
+                        <option value="UB6B">UB6B</option>
+                        <option value="UB7A">UB7A</option>
+                        <option value="UB7B">UB7B</option>
+                        <option value="GB1.">GB1</option>
+                        <option value="GB2.">GB2</option>
+                        <option value="GB3.">GB3</option>
+                        <option value="GB4.">GB4</option>
+                        <option value="GB5.">GB5</option>
+                        <option value="GB6.">GB6</option>
+                        <option value="EB1.">EB1</option>
+                        <option value="EB2.">EB2</option>
+                        <option value="EB3.">EB3</option>
+                        <option value="EB4.">EB4</option>
+                        <option value="EB5.">EB5</option>
+                        <option value="EB6.">EB6</option>
+                        <option value="EB7.">EB7</option>
+                        <option values="UGRR">UGRR</option>
+
+                    </select>
+                    &nbsp;&nbsp;&nbsp;<a href="ClassCourses.asp">班級課程表列</a>
+                </td></tr>
+        </table>
+    </form>
+    <table width="98%" border="1" cellspacing=0 cellpadding=0
+           bordercolor="#6666AA">
+        <tr>
+            <td width="15%" align="center" bgcolor="Darkblue">
+                <font color=Yellow>星期六</font></td>
+            <td width="15%" align="center" bgcolor="Darkblue">
+                <font color=Yellow>星期五</font></td>
+            <td width="15%" align="center" bgcolor="Darkblue">
+                <font color=Yellow>星期四</font></td>
+            <td width="15%" align="center" bgcolor="Darkblue">
+                <font color=Yellow>星期三</font></td>
+            <td width="15%" align="center" bgcolor="Darkblue">
+                <font color=Yellow>星期二</font></td>
+            <td width="15%" align="center" bgcolor="Darkblue">
+                <font color=Yellow>星期一</font></td>
+            <td width="10%" align="center" bgcolor="Darkblue">
+                <font color=White>節　次</font></td>
+        </tr>
+
+        <tr>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf" align="center"><a href=SelectedSbj.asp?SbjNo=G1512M>英文(二)M</a><br><a href=../lib/settimeplace.asp?SbjNo=G1512M&SbjName=英文(二)&SchdTime=401&SchdPlace=A3-103&SetMode=3&CallingAsp=../Schedule/class>A3-103</a>&nbsp;<a href="javascript: UpdateTime('G1512M','A3-103','UB1A')">⊙</a><br>
+                <a href=SelectedSbj.asp?SbjNo=G1512N>英文(二)N</a><br><a href=../lib/settimeplace.asp?SbjNo=G1512N&SbjName=英文(二)&SchdTime=401&SchdPlace=A8-B105&SetMode=3&CallingAsp=../Schedule/class>A8-B105</a>&nbsp;<a href="javascript: UpdateTime('G1512N','A8-B105','UB1A')">⊙</a><br>
+                <a href=SelectedSbj.asp?SbjNo=G1512O>英文(二)O</a><br><a href=../lib/settimeplace.asp?SbjNo=G1512O&SbjName=英文(二)&SchdTime=401&SchdPlace=A8-B113&SetMode=3&CallingAsp=../Schedule/class>A8-B113</a>&nbsp;<a href="javascript: UpdateTime('G1512O','A8-B113','UB1A')">⊙</a><br>
+                <a href=SelectedSbj.asp?SbjNo=G1512P>英文(二)P</a><br><a href=../lib/settimeplace.asp?SbjNo=G1512P&SbjName=英文(二)&SchdTime=401&SchdPlace=A8-B201&SetMode=3&CallingAsp=../Schedule/class>A8-B201</a>&nbsp;<a href="javascript: UpdateTime('G1512P','A8-B201','UB1A')">⊙</a><br>
+                <a href=SelectedSbj.asp?SbjNo=G1512Q>英文(二)Q</a><br><a href=../lib/settimeplace.asp?SbjNo=G1512Q&SbjName=英文(二)&SchdTime=401&SchdPlace=A8-B202&SetMode=3&CallingAsp=../Schedule/class>A8-B202</a>&nbsp;<a href="javascript: UpdateTime('G1512Q','A8-B202','UB1A')">⊙</a><br>
+                <a href=SelectedSbj.asp?SbjNo=G1512R>英文(二)R</a><br><a href=../lib/settimeplace.asp?SbjNo=G1512R&SbjName=英文(二)&SchdTime=401&SchdPlace=A8-B206&SetMode=3&CallingAsp=../Schedule/class>A8-B206</a>&nbsp;<a href="javascript: UpdateTime('G1512R','A8-B206','UB1A')">⊙</a><br>
+            </td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf" align="center"><a href=SelectedSbj.asp?SbjNo=G1612Y>日語(二)Y</a><br><a href=../lib/settimeplace.asp?SbjNo=G1612Y&SbjName=日語(二)&SchdTime=301&SchdPlace=A5-508&SetMode=3&CallingAsp=../Schedule/class>A5-508</a>&nbsp;<a href="javascript: UpdateTime('G1612Y','A5-508','UB1A')">⊙</a><br>
+            </td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf" align="center"><a href=SelectedSbj.asp?SbjNo=G1822F>大一體育F</a><br><a href=../lib/settimeplace.asp?SbjNo=G1822F&SbjName=大一體育(二)&SchdTime=201&SchdPlace=A999&SetMode=3&CallingAsp=../Schedule/class><font color=red>未排教室</font></a>&nbsp;<a href="javascript: UpdateTime('G1822F','A999','UB1A')">⊙</a><br>
+            </td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf" align="center"><a href=SelectedSbj.asp?SbjNo=B1222A>會計學(二)A</a><br><a href=../lib/settimeplace.asp?SbjNo=B1222A&SbjName=會計學(二)&SchdTime=101&SchdPlace=A1-502&SetMode=3&CallingAsp=../Schedule/class>A1-502</a>&nbsp;<a href="javascript: UpdateTime('B1222A','A1-502','UB1A')">⊙</a><br>
+            </td>
+            <td bordercolor="#9999FF" align="center" bgcolor="DarkBlue"><font color="white">第一節</font></td>
+        </tr>
+        <tr>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf" align="center"><a href=SelectedSbj.asp?SbjNo=G1512M>英文(二)M</a><br><a href=../lib/settimeplace.asp?SbjNo=G1512M&SbjName=英文(二)&SchdTime=402&SchdPlace=A3-103&SetMode=3&CallingAsp=../Schedule/class>A3-103</a>&nbsp;<a href="javascript: UpdateTime('G1512M','A3-103','UB1A')">⊙</a><br>
+                <a href=SelectedSbj.asp?SbjNo=G1512N>英文(二)N</a><br><a href=../lib/settimeplace.asp?SbjNo=G1512N&SbjName=英文(二)&SchdTime=402&SchdPlace=A8-B105&SetMode=3&CallingAsp=../Schedule/class>A8-B105</a>&nbsp;<a href="javascript: UpdateTime('G1512N','A8-B105','UB1A')">⊙</a><br>
+                <a href=SelectedSbj.asp?SbjNo=G1512O>英文(二)O</a><br><a href=../lib/settimeplace.asp?SbjNo=G1512O&SbjName=英文(二)&SchdTime=402&SchdPlace=A8-B113&SetMode=3&CallingAsp=../Schedule/class>A8-B113</a>&nbsp;<a href="javascript: UpdateTime('G1512O','A8-B113','UB1A')">⊙</a><br>
+                <a href=SelectedSbj.asp?SbjNo=G1512P>英文(二)P</a><br><a href=../lib/settimeplace.asp?SbjNo=G1512P&SbjName=英文(二)&SchdTime=402&SchdPlace=A8-B201&SetMode=3&CallingAsp=../Schedule/class>A8-B201</a>&nbsp;<a href="javascript: UpdateTime('G1512P','A8-B201','UB1A')">⊙</a><br>
+                <a href=SelectedSbj.asp?SbjNo=G1512Q>英文(二)Q</a><br><a href=../lib/settimeplace.asp?SbjNo=G1512Q&SbjName=英文(二)&SchdTime=402&SchdPlace=A8-B202&SetMode=3&CallingAsp=../Schedule/class>A8-B202</a>&nbsp;<a href="javascript: UpdateTime('G1512Q','A8-B202','UB1A')">⊙</a><br>
+                <a href=SelectedSbj.asp?SbjNo=G1512R>英文(二)R</a><br><a href=../lib/settimeplace.asp?SbjNo=G1512R&SbjName=英文(二)&SchdTime=402&SchdPlace=A8-B206&SetMode=3&CallingAsp=../Schedule/class>A8-B206</a>&nbsp;<a href="javascript: UpdateTime('G1512R','A8-B206','UB1A')">⊙</a><br>
+            </td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf" align="center"><a href=SelectedSbj.asp?SbjNo=G1612Y>日語(二)Y</a><br><a href=../lib/settimeplace.asp?SbjNo=G1612Y&SbjName=日語(二)&SchdTime=302&SchdPlace=A5-508&SetMode=3&CallingAsp=../Schedule/class>A5-508</a>&nbsp;<a href="javascript: UpdateTime('G1612Y','A5-508','UB1A')">⊙</a><br>
+            </td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf" align="center"><a href=SelectedSbj.asp?SbjNo=G1822F>大一體育F</a><br><a href=../lib/settimeplace.asp?SbjNo=G1822F&SbjName=大一體育(二)&SchdTime=202&SchdPlace=A999&SetMode=3&CallingAsp=../Schedule/class><font color=red>未排教室</font></a>&nbsp;<a href="javascript: UpdateTime('G1822F','A999','UB1A')">⊙</a><br>
+            </td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf" align="center"><a href=SelectedSbj.asp?SbjNo=B1222A>會計學(二)A</a><br><a href=../lib/settimeplace.asp?SbjNo=B1222A&SbjName=會計學(二)&SchdTime=102&SchdPlace=A1-502&SetMode=3&CallingAsp=../Schedule/class>A1-502</a>&nbsp;<a href="javascript: UpdateTime('B1222A','A1-502','UB1A')">⊙</a><br>
+            </td>
+            <td bordercolor="#9999FF" align="center" bgcolor="DarkBlue"><font color="white">第二節</font></td>
+        </tr>
+        <tr>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf" align="center"><a href=SelectedSbj.asp?SbjNo=G1210>計算機概論</a><br><a href=../lib/settimeplace.asp?SbjNo=G1210&SbjName=計算機概論&SchdTime=303&SchdPlace=A5-612&SetMode=3&CallingAsp=../Schedule/class>A5-612</a>&nbsp;<a href="javascript: UpdateTime('G1210','A5-612','UB1A')">⊙</a><br>
+            </td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf" align="center"><a href=SelectedSbj.asp?SbjNo=B2040>管理學</a><br><a href=../lib/settimeplace.asp?SbjNo=B2040&SbjName=管理學&SchdTime=103&SchdPlace=A5-502&SetMode=3&CallingAsp=../Schedule/class>A5-502</a>&nbsp;<a href="javascript: UpdateTime('B2040','A5-502','UB1A')">⊙</a><br>
+            </td>
+            <td bordercolor="#9999FF" align="center" bgcolor="DarkBlue"><font color="white">第三節</font></td>
+        </tr>
+        <tr>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf" align="center"><a href=SelectedSbj.asp?SbjNo=G1210>計算機概論</a><br><a href=../lib/settimeplace.asp?SbjNo=G1210&SbjName=計算機概論&SchdTime=304&SchdPlace=A5-612&SetMode=3&CallingAsp=../Schedule/class>A5-612</a>&nbsp;<a href="javascript: UpdateTime('G1210','A5-612','UB1A')">⊙</a><br>
+            </td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf" align="center"><a href=SelectedSbj.asp?SbjNo=B1222A>會計學(二)A</a><br><a href=../lib/settimeplace.asp?SbjNo=B1222A&SbjName=會計學(二)&SchdTime=204&SchdPlace=A1-502&SetMode=3&CallingAsp=../Schedule/class>A1-502</a>&nbsp;<a href="javascript: UpdateTime('B1222A','A1-502','UB1A')">⊙</a><br>
+            </td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" align="center" bgcolor="DarkBlue"><font color="white">第四節</font></td>
+        </tr>
+        <tr>
+            <td bordercolor="#9999FF" bgcolor="paleGreen"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="paleGreen"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="paleGreen"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="paleGreen"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="paleGreen"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="paleGreen"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" align="center" bgcolor="DarkRed"><font color="white">中　午</font></td>
+        </tr>
+        <tr>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf" align="center"><a href=SelectedSbj.asp?SbjNo=G1210>計算機概論</a><br><a href=../lib/settimeplace.asp?SbjNo=G1210&SbjName=計算機概論&SchdTime=406&SchdPlace=A5-612&SetMode=3&CallingAsp=../Schedule/class>A5-612</a>&nbsp;<a href="javascript: UpdateTime('G1210','A5-612','UB1A')">⊙</a><br>
+            </td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf" align="center"><a href=SelectedSbj.asp?SbjNo=B2040>管理學</a><br><a href=../lib/settimeplace.asp?SbjNo=B2040&SbjName=管理學&SchdTime=306&SchdPlace=A5-502&SetMode=3&CallingAsp=../Schedule/class>A5-502</a>&nbsp;<a href="javascript: UpdateTime('B2040','A5-502','UB1A')">⊙</a><br>
+            </td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf" align="center"><a href=SelectedSbj.asp?SbjNo=Y1000A>社會設計A</a><br><a href=../lib/settimeplace.asp?SbjNo=Y1000A&SbjName=社會設計&SchdTime=206&SchdPlace=A1-206&SetMode=3&CallingAsp=../Schedule/class>A1-206</a>&nbsp;<a href="javascript: UpdateTime('Y1000A','A1-206','UB1A')">⊙</a><br>
+                <a href=SelectedSbj.asp?SbjNo=Y1000B>社會設計B</a><br><a href=../lib/settimeplace.asp?SbjNo=Y1000B&SbjName=社會設計&SchdTime=206&SchdPlace=A1-207&SetMode=3&CallingAsp=../Schedule/class>A1-207</a>&nbsp;<a href="javascript: UpdateTime('Y1000B','A1-207','UB1A')">⊙</a><br>
+                <a href=SelectedSbj.asp?SbjNo=Y1000C>社會設計C</a><br><a href=../lib/settimeplace.asp?SbjNo=Y1000C&SbjName=社會設計&SchdTime=206&SchdPlace=A3-101&SetMode=3&CallingAsp=../Schedule/class>A3-101</a>&nbsp;<a href="javascript: UpdateTime('Y1000C','A3-101','UB1A')">⊙</a><br>
+                <a href=SelectedSbj.asp?SbjNo=Y1000D>社會設計D</a><br><a href=../lib/settimeplace.asp?SbjNo=Y1000D&SbjName=社會設計&SchdTime=206&SchdPlace=A3-105&SetMode=3&CallingAsp=../Schedule/class>A3-105</a>&nbsp;<a href="javascript: UpdateTime('Y1000D','A3-105','UB1A')">⊙</a><br>
+                <a href=SelectedSbj.asp?SbjNo=Y1000E>社會設計E</a><br><a href=../lib/settimeplace.asp?SbjNo=Y1000E&SbjName=社會設計&SchdTime=206&SchdPlace=A3-209&SetMode=3&CallingAsp=../Schedule/class>A3-209</a>&nbsp;<a href="javascript: UpdateTime('Y1000E','A3-209','UB1A')">⊙</a><br>
+                <a href=SelectedSbj.asp?SbjNo=Y1000F>社會設計F</a><br><a href=../lib/settimeplace.asp?SbjNo=Y1000F&SbjName=社會設計&SchdTime=206&SchdPlace=A3-214&SetMode=3&CallingAsp=../Schedule/class>A3-214</a>&nbsp;<a href="javascript: UpdateTime('Y1000F','A3-214','UB1A')">⊙</a><br>
+                <a href=SelectedSbj.asp?SbjNo=Y1000G>社會設計G</a><br><a href=../lib/settimeplace.asp?SbjNo=Y1000G&SbjName=社會設計&SchdTime=206&SchdPlace=A3-201&SetMode=3&CallingAsp=../Schedule/class>A3-201</a>&nbsp;<a href="javascript: UpdateTime('Y1000G','A3-201','UB1A')">⊙</a><br>
+                <a href=SelectedSbj.asp?SbjNo=Y1000H>社會設計H</a><br><a href=../lib/settimeplace.asp?SbjNo=Y1000H&SbjName=社會設計&SchdTime=206&SchdPlace=A3-204&SetMode=3&CallingAsp=../Schedule/class>A3-204</a>&nbsp;<a href="javascript: UpdateTime('Y1000H','A3-204','UB1A')">⊙</a><br>
+                <a href=SelectedSbj.asp?SbjNo=Y1000I>社會設計I</a><br><a href=../lib/settimeplace.asp?SbjNo=Y1000I&SbjName=社會設計&SchdTime=206&SchdPlace=A5-508&SetMode=3&CallingAsp=../Schedule/class>A5-508</a>&nbsp;<a href="javascript: UpdateTime('Y1000I','A5-508','UB1A')">⊙</a><br>
+                <a href=SelectedSbj.asp?SbjNo=Y1000J>社會設計J</a><br><a href=../lib/settimeplace.asp?SbjNo=Y1000J&SbjName=社會設計&SchdTime=206&SchdPlace=A5-610&SetMode=3&CallingAsp=../Schedule/class>A5-610</a>&nbsp;<a href="javascript: UpdateTime('Y1000J','A5-610','UB1A')">⊙</a><br>
+            </td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" align="center" bgcolor="DarkBlue"><font color="white">第五節</font></td>
+        </tr>
+        <tr>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf" align="center"><a href=SelectedSbj.asp?SbjNo=G1010A>微積分A</a><br><a href=../lib/settimeplace.asp?SbjNo=G1010A&SbjName=微積分&SchdTime=407&SchdPlace=A5-610&SetMode=3&CallingAsp=../Schedule/class>A5-610</a>&nbsp;<a href="javascript: UpdateTime('G1010A','A5-610','UB1A')">⊙</a><br>
+            </td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf" align="center"><a href=SelectedSbj.asp?SbjNo=B2040>管理學</a><br><a href=../lib/settimeplace.asp?SbjNo=B2040&SbjName=管理學&SchdTime=307&SchdPlace=A5-502&SetMode=3&CallingAsp=../Schedule/class>A5-502</a>&nbsp;<a href="javascript: UpdateTime('B2040','A5-502','UB1A')">⊙</a><br>
+            </td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf" align="center"><a href=SelectedSbj.asp?SbjNo=Y1000A>社會設計A</a><br><a href=../lib/settimeplace.asp?SbjNo=Y1000A&SbjName=社會設計&SchdTime=207&SchdPlace=A1-206&SetMode=3&CallingAsp=../Schedule/class>A1-206</a>&nbsp;<a href="javascript: UpdateTime('Y1000A','A1-206','UB1A')">⊙</a><br>
+                <a href=SelectedSbj.asp?SbjNo=Y1000B>社會設計B</a><br><a href=../lib/settimeplace.asp?SbjNo=Y1000B&SbjName=社會設計&SchdTime=207&SchdPlace=A1-207&SetMode=3&CallingAsp=../Schedule/class>A1-207</a>&nbsp;<a href="javascript: UpdateTime('Y1000B','A1-207','UB1A')">⊙</a><br>
+                <a href=SelectedSbj.asp?SbjNo=Y1000C>社會設計C</a><br><a href=../lib/settimeplace.asp?SbjNo=Y1000C&SbjName=社會設計&SchdTime=207&SchdPlace=A3-101&SetMode=3&CallingAsp=../Schedule/class>A3-101</a>&nbsp;<a href="javascript: UpdateTime('Y1000C','A3-101','UB1A')">⊙</a><br>
+                <a href=SelectedSbj.asp?SbjNo=Y1000D>社會設計D</a><br><a href=../lib/settimeplace.asp?SbjNo=Y1000D&SbjName=社會設計&SchdTime=207&SchdPlace=A3-105&SetMode=3&CallingAsp=../Schedule/class>A3-105</a>&nbsp;<a href="javascript: UpdateTime('Y1000D','A3-105','UB1A')">⊙</a><br>
+                <a href=SelectedSbj.asp?SbjNo=Y1000E>社會設計E</a><br><a href=../lib/settimeplace.asp?SbjNo=Y1000E&SbjName=社會設計&SchdTime=207&SchdPlace=A3-209&SetMode=3&CallingAsp=../Schedule/class>A3-209</a>&nbsp;<a href="javascript: UpdateTime('Y1000E','A3-209','UB1A')">⊙</a><br>
+                <a href=SelectedSbj.asp?SbjNo=Y1000F>社會設計F</a><br><a href=../lib/settimeplace.asp?SbjNo=Y1000F&SbjName=社會設計&SchdTime=207&SchdPlace=A3-214&SetMode=3&CallingAsp=../Schedule/class>A3-214</a>&nbsp;<a href="javascript: UpdateTime('Y1000F','A3-214','UB1A')">⊙</a><br>
+                <a href=SelectedSbj.asp?SbjNo=Y1000G>社會設計G</a><br><a href=../lib/settimeplace.asp?SbjNo=Y1000G&SbjName=社會設計&SchdTime=207&SchdPlace=A3-201&SetMode=3&CallingAsp=../Schedule/class>A3-201</a>&nbsp;<a href="javascript: UpdateTime('Y1000G','A3-201','UB1A')">⊙</a><br>
+                <a href=SelectedSbj.asp?SbjNo=Y1000H>社會設計H</a><br><a href=../lib/settimeplace.asp?SbjNo=Y1000H&SbjName=社會設計&SchdTime=207&SchdPlace=A3-204&SetMode=3&CallingAsp=../Schedule/class>A3-204</a>&nbsp;<a href="javascript: UpdateTime('Y1000H','A3-204','UB1A')">⊙</a><br>
+                <a href=SelectedSbj.asp?SbjNo=Y1000I>社會設計I</a><br><a href=../lib/settimeplace.asp?SbjNo=Y1000I&SbjName=社會設計&SchdTime=207&SchdPlace=A5-508&SetMode=3&CallingAsp=../Schedule/class>A5-508</a>&nbsp;<a href="javascript: UpdateTime('Y1000I','A5-508','UB1A')">⊙</a><br>
+                <a href=SelectedSbj.asp?SbjNo=Y1000J>社會設計J</a><br><a href=../lib/settimeplace.asp?SbjNo=Y1000J&SbjName=社會設計&SchdTime=207&SchdPlace=A5-610&SetMode=3&CallingAsp=../Schedule/class>A5-610</a>&nbsp;<a href="javascript: UpdateTime('Y1000J','A5-610','UB1A')">⊙</a><br>
+            </td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf" align="center"><a href=SelectedSbj.asp?SbjNo=G1010A>微積分A</a><br><a href=../lib/settimeplace.asp?SbjNo=G1010A&SbjName=微積分&SchdTime=107&SchdPlace=A5-610&SetMode=3&CallingAsp=../Schedule/class>A5-610</a>&nbsp;<a href="javascript: UpdateTime('G1010A','A5-610','UB1A')">⊙</a><br>
+            </td>
+            <td bordercolor="#9999FF" align="center" bgcolor="DarkBlue"><font color="white">第六節</font></td>
+        </tr>
+        <tr>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf" align="center"><a href=SelectedSbj.asp?SbjNo=G1010A>微積分A</a><br><a href=../lib/settimeplace.asp?SbjNo=G1010A&SbjName=微積分&SchdTime=408&SchdPlace=A5-610&SetMode=3&CallingAsp=../Schedule/class>A5-610</a>&nbsp;<a href="javascript: UpdateTime('G1010A','A5-610','UB1A')">⊙</a><br>
+            </td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf" align="center"><a href=SelectedSbj.asp?SbjNo=B2822A>日語會話A</a><br><a href=../lib/settimeplace.asp?SbjNo=B2822A&SbjName=日語會話(二)&SchdTime=308&SchdPlace=A5-502&SetMode=3&CallingAsp=../Schedule/class>A5-502</a>&nbsp;<a href="javascript: UpdateTime('B2822A','A5-502','UB1A')">⊙</a><br>
+            </td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf" align="center"><a href=SelectedSbj.asp?SbjNo=G1432B>語文表達B</a><br><a href=../lib/settimeplace.asp?SbjNo=G1432B&SbjName=國語文能力表達(二)&SchdTime=108&SchdPlace=A5-504&SetMode=3&CallingAsp=../Schedule/class>A5-504</a>&nbsp;<a href="javascript: UpdateTime('G1432B','A5-504','UB1A')">⊙</a><br>
+            </td>
+            <td bordercolor="#9999FF" align="center" bgcolor="DarkBlue"><font color="white">第七節</font></td>
+        </tr>
+        <tr>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf" align="center"><a href=SelectedSbj.asp?SbjNo=B2822A>日語會話A</a><br><a href=../lib/settimeplace.asp?SbjNo=B2822A&SbjName=日語會話(二)&SchdTime=309&SchdPlace=A5-502&SetMode=3&CallingAsp=../Schedule/class>A5-502</a>&nbsp;<a href="javascript: UpdateTime('B2822A','A5-502','UB1A')">⊙</a><br>
+            </td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf"><br>&nbsp;</td>
+            <td bordercolor="#9999FF" bgcolor="#9ecfcf" align="center"><a href=SelectedSbj.asp?SbjNo=G1432B>語文表達B</a><br><a href=../lib/settimeplace.asp?SbjNo=G1432B&SbjName=國語文能力表達(二)&SchdTime=109&SchdPlace=A5-504&SetMode=3&CallingAsp=../Schedule/class>A5-504</a>&nbsp;<a href="javascript: UpdateTime('G1432B','A5-504','UB1A')">⊙</a><br>
+            </td>
+            <td bordercolor="#9999FF" align="center" bgcolor="DarkBlue"><font color="white">第八節</font></td>
+        </tr></table>
+</center>
+</body>
+</html>
